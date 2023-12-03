@@ -42,15 +42,15 @@
       <h2 class="visually-hidden">Анкета питомца</h2>
       <p class="pet-questionnaire__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-      <form class="questionnaire__form pet-form" action="" method="post">
+      <form class="questionnaire__form pet-form" action="https://echo.htmlacademy.ru/" method="post">
         <section class="pet-form__pet-information pet-information">
           <h3 class="visually-hidden">Данные питомца</h3>
 
           <label class="pet-information__label form-label" for="name">Имя:*</label>
-          <input class="pet-information__text text-input" type="text" id="name" name="pet-name" placeholder="Барсик">
+          <input class="pet-information__text text-input" type="text" id="name" name="pet-name" placeholder="Барсик" required>
 
           <label class="pet-information__label form-label" for="weight">Вес (кг):*</label>
-          <input class="pet-information__text text-input" type="text" id="weight" name="pet-weight" placeholder="7">
+          <input class="pet-information__text text-input" type="text" id="weight" name="pet-weight" placeholder="7" required>
 
           <label class="pet-information__label form-label" for="age">Возраст (лет):</label>
           <input class="pet-information__text text-input" type="text" id="age" name="pet-age" placeholder="7">
@@ -60,7 +60,7 @@
           <h3 class="visually-hidden">Тип продукции</h3>
 
           <fieldset class="product-type__fieldset form-fieldset">
-            <input class="form-fieldset__radio-button radio-button" type="radio" id="slim-products" name="type-of-product" value="slim">
+            <input class="form-fieldset__radio-button radio-button" type="radio" id="slim-products" name="type-of-product" value="slim" checked>
             <label class="form-fieldset-label control-label" for="slim-products">Похудение</label>
 
             <input class="form-fieldset-button radio-button" type="radio" id="pro-products" name="type-of-product" value="pro">
@@ -75,15 +75,15 @@
           <h3 class="owner-contacts__title title title--subtitle">Контактные данные (владельца кота)</h3>
 
           <label class="owner-contacts__label form-label" for="mail">E-mail:*</label>
-          <input class="owner-contacts__text text-input text-input--mail" type="text" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com">
+          <input class="owner-contacts__text text-input text-input--mail" type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
 
           <label class="owner-contacts__label form-label" for="weight">Телефон:*</label>
-          <input class="owner-contacts__text text-input text-input--phone" type="text" id="phone" name="owner-phone" placeholder="8 (960) 900-60-90">
+          <input class="owner-contacts__text text-input text-input--phone" type="text" id="phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
         </section>
 
         <section class="pet-form__comment comment">
           <h3 class="comment__title title title--subtitle">Комментарий</h3>
-          <textarea class="comment__area" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <textarea class="comment__area" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </section>
 
         <section class="pet-form__additional form-fieldset">
@@ -101,7 +101,12 @@
           <input class="form-fieldset-button checkbox" type="checkbox" id="vitamins" name="vitamins">
           <label class="form-fieldset-label control-label" for="vitamins">Витамины</label>
         </section>
+
+        <button class="pet-form__button button" type="submit">Отправить заявку</button>
       </form>
+      <p class="questionnaire__require">
+        <small>* — Обязательные поля</small>
+      </p>
     </section>
   </main>
 
