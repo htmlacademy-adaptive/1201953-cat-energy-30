@@ -12,8 +12,6 @@
     <a class="header__logo" href="./index.html">
       <img class="header__logo-image" src="./images/logo.svg" width="34" height="38"
         alt="Логотип сайта Cat Energy.">
-    </a>
-    <a class="header__logo" href="./index.html">
       <img class="header__logo-text logo-text" src="./images/header-logo-text.svg" width="102" height="18"
         alt="Cat energy.">
     </a>
@@ -43,14 +41,16 @@
     <section class="products">
       <h2 class="visually-hidden">Список товаров</h2>
 
-      <section>
-        <h3 class="visually-hidden" id="pro">Каталог Pro</h3>
-        <ul class="products__list products-list">
-          <li class="products-list__item card">
-            <img class="card__image" src="./images/products/product-chicken-small.jpg" width="68" height="86"
+        <div class="products__list products-list" id="pro">
+          <article class="products-list__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./images/products/product-chicken-small.png" width="68" height="86"
               alt="Cat energy pro 500 г со вкусом курицы.">
+            </a>
             <div class="card__wrapper">
-              <h4 class="card__title title">Cat Energy PRO 500 г</h4>
+              <a class="card__link" href="#">
+                <h3 class="card__title title">Cat Energy PRO 500 г</h3>
+              </a>
               <dl class="card__properties card-properties">
                 <dt class="card-properties__name">Масса</dt>
                 <dd class="card-properties__value">500 г</dd>
@@ -60,14 +60,18 @@
                 <dd class="card-properties__value">700 ₽</dd>
               </dl>
             </div>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
+            <a class="card__button button" href="#">Заказать</a>
+          </article>
 
-          <li class="products-list__item card">
-            <img class="card__image" src="./images/products/product-chicken-large.jpg" width="84" height="100"
+          <article class="products-list__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./images/products/product-chicken-large.png" width="84" height="100"
               alt="Cat energy pro 1000 г со вкусом курицы.">
+            </a>
             <div class="card__wrapper">
-              <h4 class="card__title title">Cat Energy PRO 1000 г</h4>
+              <a class="card__link" href="#">
+                <h3 class="card__title title">Cat Energy PRO 1000 г</h3>
+              </a>
               <dl class="card__properties card-properties">
                 <dt class="card-properties__name">Масса</dt>
                 <dd class="card-properties__value">1000 г</dd>
@@ -77,14 +81,18 @@
                 <dd class="card-properties__value">1000 ₽</dd>
               </dl>
             </div>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
+            <a class="card__button button" href="#">Заказать</a>
+          </article>
 
-          <li class="products-list__item card">
-            <img class="card__image" src="./images/products/product-fish-small.jpg" width="68" height="78"
+          <article class="products-list__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./images/products/product-fish-small.png" width="68" height="78"
               alt="Cat energy pro 500 г со вкусом рыбы.">
+            </a>
             <div class="card__wrapper">
-              <h4 class="card__title title">Cat Energy PRO 500 г</h4>
+              <a class="card__link" href="#">
+                <h3 class="card__title title">Cat Energy PRO 500 г</h3>
+              </a>
               <dl class="card__properties card-properties">
                 <dt class="card-properties__name">Масса</dt>
                 <dd class="card-properties__value">500 г</dd>
@@ -94,14 +102,18 @@
                 <dd class="card-properties__value">700 ₽</dd>
               </dl>
             </div>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
+            <a class="card__button button" href="#">Заказать</a>
+          </article>
 
-          <li class="products-list__item card">
-            <img class="card__image" src="./images/products/product-fish-large.jpg" width="84" height="100"
+          <article class="products-list__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./images/products/product-fish-large.png" width="84" height="100"
               alt="Cat energy pro 1000 г со вкусом рыбы.">
+            </a>
             <div class="card__wrapper">
-              <h4 class="card__title title">Cat Energy PRO 1000 г</h4>
+              <a class="card__link" href="#">
+                <h3 class="card__title title">Cat Energy PRO 1000 г</h3>
+              </a>
               <dl class="card__properties card-properties">
                 <dt class="card-properties__name">Масса</dt>
                 <dd class="card-properties__value">1000 г</dd>
@@ -111,19 +123,18 @@
                 <dd class="card-properties__value">1000 ₽</dd>
               </dl>
             </div>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
-        </ul>
-      </section>
+            <a class="card__button button" href="#">Заказать</a>
+          </article>
 
-      <section>
-        <h3 class="visually-hidden" id="slim">Каталог Slim</h3>
-        <ul class="products__list products-list">
-          <li class="products-list__item card">
-            <img class="card__image" src="./images/products/product-buckwheat-small.jpg" width="68" height="78"
+          <article class="products-list__item card" id="slim">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./images/products/product-buckwheat-small.png" width="68" height="78"
               alt="Cat energy slim 500 г со вкусом гречки.">
+            </a>
             <div class="card__wrapper">
-              <h4 class="card__title title">Cat Energy SLIM 500 г</h4>
+              <a class="card__link" href="#">
+                <h3 class="card__title title">Cat Energy SLIM 500 г</h3>
+              </a>
               <dl class="card__properties card-properties">
                 <dt class="card-properties__name">Масса</dt>
                 <dd class="card-properties__value">500 г</dd>
@@ -133,14 +144,18 @@
                 <dd class="card-properties__value">400 ₽</dd>
               </dl>
             </div>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
+            <a class="card__button button" href="#">Заказать</a>
+          </article>
 
-          <li class="products-list__item card">
-            <img class="card__image" src="./images/products/product-buckwheat-large.jpg" width="84" height="100"
+          <article class="products-list__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./images/products/product-buckwheat-large.png" width="84" height="100"
               alt="Cat energy slim 1000 г со вкусом гречки.">
+            </a>
             <div class="card__wrapper">
-              <h4 class="card__title title">Cat Energy SLIM 1000 г</h4>
+              <a class="card__link" href="#">
+                <h3 class="card__title title">Cat Energy SLIM 1000 г</h3>
+              </a>
               <dl class="card__properties card-properties">
                 <dt class="card-properties__name">Масса</dt>
                 <dd class="card-properties__value">1000 г</dd>
@@ -150,14 +165,18 @@
                 <dd class="card-properties__value">700 ₽</dd>
               </dl>
             </div>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
+            <a class="card__button button" href="#">Заказать</a>
+          </article>
 
-          <li class="products-list__item card">
-            <img class="card__image" src="./images/products/product-rice-small.jpg" width="68" height="78"
+          <article class="products-list__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./images/products/product-rice-small.png" width="68" height="78"
               alt="Cat energy slim 500 г со вкусом риса.">
+            </a>
             <div class="card__wrapper">
-              <h4 class="card__title title">Cat Energy SLIM 500 г</h4>
+              <a class="card__link" href="#">
+                <h3 class="card__title title">Cat Energy SLIM 500 г</h3>
+              </a>
               <dl class="card__properties card-properties">
                 <dt class="card-properties__name">Масса</dt>
                 <dd class="card-properties__value">500 г</dd>
@@ -167,19 +186,18 @@
                 <dd class="card-properties__value">500 ₽</dd>
               </dl>
             </div>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
-        </ul>
-      </section>
+            <a class="card__button button" href="#">Заказать</a>
+          </article>
+        </div>
 
-      <div class="products__show-more show-more">
+      <article class="products__show-more show-more">
         <button class="show-more__button-show-product button button--show-product" type="button">
           <span class="visually-hidden">Показать продукт</span>
         </button>
         <p class="show-more__text">Показать еще 100500 товаров</p>
         <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
         <a class="show-more__all-products-burron button button--secondary" href="#">Показать все</a>
-      </div>
+      </article>
     </section>
 
     <section class="additional-products">
@@ -189,7 +207,6 @@
         <li class="additional-products-list__item additional-card">
           <h3 class="additional-card__title title">Сахарозаменитель</h3>
           <dl class="additional-card__properites card-properties">
-            <!--Можно ли переиспользовать card-properties с другими элементами?-->
             <dt class="card-properties__quantity">1 упаковка (100 г)</dt>
             <dd class="card-properties__price">200 ₽</dd>
           </dl>
@@ -235,36 +252,39 @@
       <h2 class="visually-hidden">Контактная информация</h2>
       <p class="contacts__invite">Приглашаем к сотрудничеству дилеров</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div class="contacts__map map"></div>
+      <div class="contacts__map map">
+        <img class="map__image" src="./images/map.jpg" alt="Расположение компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
 
-      <img class="footer__logo logo-text" src="./images/footer-logo-text.svg" width="128" height="24"
-        alt="Cat energy.">
+      <img class="footer__logo logo-text" src="./images/footer-logo-text.svg" width="128" height="24" alt="Cat energy.">
+    </section>
 
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item social__item--first-social">
-            <a class="social__link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">В Контакте</span>
-            </a>
-          </li>
-          <li class="social__item social__item--second-social">
-            <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyru">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-          <li class="social__item social__item--third-social">
-            <a class="social__link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-        </ul>
+    <section class="footer__social social">
+      <h2 class="visually-hidden">Наши социальные сети</h2>
 
-        <div class="footer__vendor-wrapper vendor">
-          <a class="vendor__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          <a class="vendor__link vendor__link--logo" href="https://htmlacademy.ru/">
-            <span class="visually-hidden">Логотип HTML Academy</span>
+      <ul class="social__list">
+        <li class="social__item social__item--first-social">
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">В Контакте</span>
           </a>
-        </div>
+        </li>
+        <li class="social__item social__item--second-social">
+          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyru">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="social__item social__item--third-social">
+          <a class="social__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="social__vendor-wrapper vendor">
+        <p class="vendor__text">HTML Academy</p>
+        <a class="vendor__link vendor__link--logo" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Логотип HTML Academy</span>
+        </a>
       </div>
     </section>
   </footer>
