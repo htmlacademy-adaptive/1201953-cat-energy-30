@@ -5,13 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог товаров</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/180.png">
+  <link rel="manifest" href="./manifest.webmainfest">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo" href="./index.html">
-      <img class="header__logo-image" src="./images/logo.svg" width="34" height="38"
-        alt="Логотип сайта Cat Energy.">
+    <a class="header__logo">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="./images/logo-desctop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60" height="50">
+        <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="34" height="38" >
+      </picture>
       <img class="header__logo-text logo-text" src="./images/header-logo-text.svg" width="102" height="18"
         alt="Cat energy.">
     </a>
@@ -44,8 +53,16 @@
         <div class="products__list products-list" id="pro">
           <article class="products-list__item card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./images/products/product-chicken-small.png" width="68" height="86"
-              alt="Cat energy pro 500 г со вкусом курицы.">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="./images/products/product-1@2x.webp 2x,
+                ./images/products/product-1@2x.png 2x,
+                ./images/products/product-1@1x.webp 1x,
+                ./images/products/product-1@1x.png 1x" width="161" height="172">
+                <img class="card__image" src="./images/products/product-1-mobile@1x.png" srcset="./images/products/product-1-mobile@2x.webp 2x,
+                ./images/products/product-1-mobile@2x.png 2x,
+                ./images/products/product-1-mobile@1x.webp 1x" width="68" height="86"
+                alt="Cat energy pro 500 г со вкусом курицы.">
+              </picture>
             </a>
             <div class="card__wrapper">
               <a class="card__link" href="#">
@@ -65,7 +82,18 @@
 
           <article class="products-list__item card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./images/products/product-chicken-large.png" width="84" height="100"
+              <picture>
+                <source type="image/png" media="(min-width: 1200px)" srcset="./images/products/product-2-desctop@2x.webp 2x,
+                ./images/products/product-2-desctop@2x.png 2x,
+                ./images/products/product-2-desctop@1x.webp 1x,
+                ./images/products/product-2-desctop@1x.png 1x" width="172" height="196">
+                <source type="image/png" media="(min-width: 768px)" srcset="./images/products/product-2-tablet@2x.webp 2x,
+                ./images/products/product-2-tablet@2x.png 2x,
+                ./images/products/product-2-tablet@1x.webp 1x,
+                ./images/products/product-2-tablet@1x.png 1x" width="168" height="206">
+                <img class="card__image" src="./images/products/product-2-mobile@1x.png" srcset="./images/products/product-2-mobile@2x.webp 2x,
+                ./images/products/product-2-mobile@2x.png 2x,
+                ./images/products/product-2-mobile@1x.webp 1x" width="84" height="100"
               alt="Cat energy pro 1000 г со вкусом курицы.">
             </a>
             <div class="card__wrapper">
@@ -86,8 +114,16 @@
 
           <article class="products-list__item card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./images/products/product-fish-small.png" width="68" height="78"
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="./images/products/product-3@2x.webp 2x,
+                ./images/products/product-3@2x.png 2x,
+                ./images/products/product-3@1x.webp 1x,
+                ./images/products/product-3@1x.png 1x" width="161" height="172">
+                <img class="card__image" src="./images/products/product-3-mobile@1x.png" srcset="./images/products/product-3-mobile@2x.webp 2x,
+                ./images/products/product-3-mobile@2x.png 2x,
+                ./images/products/product-3-mobile@1x.webp 1x" width="68" height="78"
               alt="Cat energy pro 500 г со вкусом рыбы.">
+              </picture>
             </a>
             <div class="card__wrapper">
               <a class="card__link" href="#">
@@ -107,7 +143,18 @@
 
           <article class="products-list__item card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./images/products/product-fish-large.png" width="84" height="100"
+              <picture>
+                <source type="image/png" media="(min-width: 1200px)" srcset="./images/products/product-4-desctop@2x.webp 2x,
+                ./images/products/product-4-desctop@2x.png 2x,
+                ./images/products/product-4-desctop@1x.webp 1x,
+                ./images/products/product-4-desctop@1x.png 1x" width="172" height="196">
+                <source type="image/png" media="(min-width: 768px)" srcset="./images/products/product-4-tablet@2x.webp 2x,
+                ./images/products/product-4-tablet@2x.png 2x,
+                ./images/products/product-4-tablet@1x.webp 1x,
+                ./images/products/product-4-tablet@1x.png 1x" width="168" height="200">
+                <img class="card__image" src="./images/products/product-4-mobile@1x.png" srcset="./images/products/product-4-mobile@2x.webp 2x,
+                ./images/products/product-4-mobile@2x.png 2x,
+                ./images/products/product-4-mobile@1x.webp 1x" width="84" height="100"
               alt="Cat energy pro 1000 г со вкусом рыбы.">
             </a>
             <div class="card__wrapper">
@@ -128,8 +175,16 @@
 
           <article class="products-list__item card" id="slim">
             <a class="card__link" href="#">
-              <img class="card__image" src="./images/products/product-buckwheat-small.png" width="68" height="78"
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="./images/products/product-5@2x.webp 2x,
+                ./images/products/product-5@2x.png 2x,
+                ./images/products/product-5@1x.webp 1x,
+                ./images/products/product-5@1x.png 1x" width="161" height="172">
+                <img class="card__image" src="./images/products/product-5-mobile@1x.png" srcset="./images/products/product-5-mobile@2x.webp 2x,
+                ./images/products/product-5-mobile@2x.png 2x,
+                ./images/products/product-5-mobile@1x.webp 1x" width="68" height="78"
               alt="Cat energy slim 500 г со вкусом гречки.">
+              </picture>
             </a>
             <div class="card__wrapper">
               <a class="card__link" href="#">
@@ -149,7 +204,18 @@
 
           <article class="products-list__item card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./images/products/product-buckwheat-large.png" width="84" height="100"
+              <picture>
+                <source type="image/png" media="(min-width: 1200px)" srcset="./images/products/product-6-desctop@2x.webp 2x,
+                ./images/products/product-6-desctop@2x.png 2x,
+                ./images/products/product-6-desctop@1x.webp 1x,
+                ./images/products/product-6-desctop@1x.png 1x" width="172" height="196">
+                <source type="image/png" media="(min-width: 768px)" srcset="./images/products/product-2-tablet@2x.webp 2x,
+                ./images/products/product-6-tablet@2x.png 2x,
+                ./images/products/product-6-tablet@1x.webp 1x,
+                ./images/products/product-6-tablet@1x.png 1x" width="168" height="200">
+                <img class="card__image" src="./images/products/product-6-mobile@1x.png" srcset="./images/products/product-6-mobile@2x.webp 2x,
+                ./images/products/product-6-mobile@2x.png 2x,
+                ./images/products/product-6-mobile@1x.webp 1x" width="84" height="100"
               alt="Cat energy slim 1000 г со вкусом гречки.">
             </a>
             <div class="card__wrapper">
@@ -170,8 +236,16 @@
 
           <article class="products-list__item card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./images/products/product-rice-small.png" width="68" height="78"
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="./images/products/product-7@2x.webp 2x,
+                ./images/products/product-7@2x.png 2x,
+                ./images/products/product-7@1x.webp 1x,
+                ./images/products/product-7@1x.png 1x" width="161" height="172">
+                <img class="card__image" src="./images/products/product-7-mobile@1x.png" srcset="./images/products/product-7-mobile@2x.webp 2x,
+                ./images/products/product-7-mobile@2x.png 2x,
+                ./images/products/product-7-mobile@1x.webp 1x" width="68" height="78"
               alt="Cat energy slim 500 г со вкусом риса.">
+              </picture>
             </a>
             <div class="card__wrapper">
               <a class="card__link" href="#">
@@ -253,7 +327,21 @@
       <p class="contacts__invite">Приглашаем к сотрудничеству дилеров</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div class="contacts__map map">
-        <img class="map__image" src="./images/map.jpg" alt="Расположение компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <picture>
+          <source type="image/jpeg" media="(min-width: 1200px)" srcset="./images/map-desctop@2x.webp 2x,
+          ./images/map-desctop@2x.jpg 2x,
+          ./images/map-desctop@1x.webp 1x,
+          ./images/map-desctop@1x.jpg 1x" width="1440" height="400">
+
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="./images/map-tablet@2x.webp 2x,
+          ./images/map-tablet@2x.jpg 2x,
+          ./images/map-tablet@1x.webp 1x,
+          ./images/map-tablet@1x.jpg 1x" width="768" height="400">
+
+          <img class="map__image" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.webp 2x,
+          ./images/map-mobile@2x.jpg 2x,
+          ./images/map-mobile@1x.webp 1x" width="320" height="362" alt="Расположение компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
       </div>
 
       <img class="footer__logo logo-text" src="./images/footer-logo-text.svg" width="128" height="24" alt="Cat energy.">
@@ -281,10 +369,12 @@
       </ul>
 
       <div class="social__vendor-wrapper vendor">
-        <p class="vendor__text">HTML Academy</p>
-        <a class="vendor__link vendor__link--logo" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Логотип HTML Academy</span>
-        </a>
+        <a class="vendor__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="vendor__text">HTML Academy</p>
+          <div class="vendor__logo">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+          </div>
+          </a>
       </div>
     </section>
   </footer>
