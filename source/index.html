@@ -122,18 +122,28 @@
 
       <div class="example__wrapper">
         <picture>
-          <source media="(min-width: 768px)" srcset="./images/cat-before@2x.webp 2x,
+          <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-before@2x.webp 2x,
           ./images/cat-before@2x.png 2x,
           ./images/cat-before@1x.webp 1x,
-          ./images/cat-before@1x.png 1x">
+          ./images/cat-before@1x.png 1x" width="560" height="512">
           <img class="example__image example__image--before" src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.webp 2x,
           ./images/cat-before-mobile@2x.png 2x,
           ./images/cat-before-mobile@1x.webp 1x
           ./images/cat-before-mobile@1x.png 1x" width="280" height="256"
           alt="Кот Борис до похудения.">
         </picture>
-        <img class="example__image example__image--after" src="./images/cat-after.png" width="280" height="256"
+
+        <picture>
+          <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-after@2x.webp 2x,
+          ./images/cat-after@2x.png 2x,
+          ./images/cat-after@1x.webp 1x,
+          ./images/cat-after@1x.png 1x" width="560" height="512">
+          <img class="example__image example__image--before" src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.webp 2x,
+          ./images/cat-after-mobile@2x.png 2x,
+          ./images/cat-after-mobile@1x.webp 1x
+          ./images/cat-after-mobile@1x.png 1x" width="280" height="256"
           alt="Кот Борис после похудения.">
+          </picture>
         <button class="example__slider" type="button">
           <span class="visually-hidden">Измнение картинки до похудения и после похудения</span>
         </button>
