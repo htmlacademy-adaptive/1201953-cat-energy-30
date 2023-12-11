@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Подбор программы</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/180.png">
+  <link rel="manifest" href="./manifest.webmainfest">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
   <header class="header">
-    <a class="header__logo" href="./index.html">
-      <img class="header__logo-image" src="./images/logo.svg" width="34" height="38" alt="Логотип сайта Cat Energy.">
-      <img class="header__logo-text logo-text" src="./images/header-logo-text.svg" width="102" height="18" alt="Cat energy.">
+    <a class="header__logo">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1220px)" srcset="./images/logo-desctop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60" height="50">
+        <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="34" height="38" >
+      </picture>
+      <img class="header__logo-text logo-text" src="./images/header-logo-text.svg" width="102" height="18"
+        alt="Cat energy.">
     </a>
     <nav class="header__navigation navigation">
       <button class="navigation__toggle" type="button">
@@ -114,7 +122,15 @@
       <p class="contacts__invite">Приглашаем к сотрудничеству дилеров</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div class="contacts__map map">
-        <img class="map__image" src="./images/map.jpg" alt="Расположение компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <picture>
+          <source type="image/jpeg" media="(min-width: 1220px)" srcset="./images/map-desctop@2x.jpg 2x,
+          ./images/map-desctop@1x.jpg 1x" width="1440" height="400">
+
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="./images/map-tablet@2x.jpg 2x,
+          ./images/map-tablet@1x.jpg 1x" width="768" height="400">
+
+          <img class="map__image" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Расположение компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
       </div>
 
       <img class="footer__logo logo-text" src="./images/footer-logo-text.svg" width="128" height="24" alt="Cat energy.">
@@ -142,9 +158,11 @@
       </ul>
 
       <div class="social__vendor-wrapper vendor">
+        <a class="vendor__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="vendor__text">HTML Academy</p>
-        <a class="vendor__link vendor__link--logo" href="https://htmlacademy.ru/">
+        <div class="vendor__logo">
           <span class="visually-hidden">Логотип HTML Academy</span>
+        </div>
         </a>
       </div>
     </section>
