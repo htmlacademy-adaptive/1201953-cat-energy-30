@@ -9,15 +9,15 @@
   text-decoration: none;
   background-color: #68b738;
   border: none;
-}
 
-.button--primary {
-  color: #000000;
-  line-height: 16px;
-  background-color: transparent;
-}
+  &--primary {
+    color: #000000;
+    line-height: 16px;
+    background-color: transparent;
+  }
 
-.button--secondary {
-  color: inherit;
-  background-color: #f2f2f2;
+  &--secondary {
+    color: inherit;
+    background-color: #f2f2f2;
+  }
 }
