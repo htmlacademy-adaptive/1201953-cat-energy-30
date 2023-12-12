@@ -12,7 +12,7 @@
 </head>
 <body class="page__body">
   <header class="header">
-    <a class="header__logo">
+    <a class="header__logo" href="./index.html">
       <picture>
         <source type="image/svg+xml" media="(min-width: 1220px)" srcset="./images/logo-desctop.svg" width="70" height="59">
         <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60" height="50">
@@ -78,7 +78,7 @@
         </fieldset>
 
         <fieldset class="pet-form__owner-contacts owner-contacts">
-          <legend class="owner-contacts__title title title--subtitle">Контактные данные (владельца кота)</legend>
+          <legend class="owner-contacts__title title title--form">Контактные данные (владельца кота)</legend>
 
           <label class="owner-contacts__label form-label" for="mail">E-mail:*</label>
           <input class="owner-contacts__text text-input text-input--mail" type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
@@ -88,12 +88,12 @@
         </fieldset>
 
         <fieldset class="pet-form__comment comment">
-          <legend class="comment__title title title--subtitle">Комментарий</legend>
+          <legend class="comment__title title title--form">Комментарий</legend>
           <textarea class="comment__area" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="pet-form__additional form-fieldset">
-          <legend class="form-fieldset__title title title--subtitle">Дополнительно</legend>
+          <legend class="form-fieldset__title title title--form">Дополнительно</legend>
 
           <input class="form-fieldset-button checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
           <label class="form-fieldset-label control-label" for="sweetener">Сахарозаменитель</label>

@@ -1,0 +1,15 @@
+.card-properties__name {
+  @include card-properties-font();
+}
+
+.card-properties__value {
+  @include card-properties-font();
+}
+
+.card-properties__quantity {
+  @include card-properties-font();
+}
+
+.card-properties__price {
+  @include card-properties-font();
+}
