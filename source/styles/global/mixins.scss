@@ -11,4 +11,9 @@
 @mixin card-properties-font() {
   font-family: $font-family-lato;
   font-size: 12px;
+
+  @media(min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

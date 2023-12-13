@@ -6,43 +6,84 @@
   font-style: normal;
   line-height: 20px;
 
+  @media(min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
   &--page-title-main {
     color: #ffffff;
     font-size: 36px;
     line-height: 36px;
+
+    @media(min-width: 768px) {
+      color: #000000;
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   &--subtitle {
     color: #000000;
     font-size: 24px;
     line-height: 37px;
+
+    @media(min-width: 768px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   &--section-title {
     color: #000000;
     font-size: 36px;
     line-height: 40px;
+
+    @media(min-width: 768px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   &--page-title {
     color: #000000;
     font-size: 36px;
     line-height: 36px;
+
+    @media(min-width: 768px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   &--form {
     color: #000000;
     font-size: 24px;
     line-height: 26px;
+
+    @media(min-width: 768px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   &--additional {
     color: #000000;
     font-size: 24px;
     line-height: 24px;
+
+    @media(min-width: 768px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   &--additional-product {
     line-height: 16px;
+
+    @media(min-width: 768px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
