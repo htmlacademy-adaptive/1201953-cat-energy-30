@@ -1,15 +1,9 @@
-.card-properties__name {
-  @include card-properties-font();
-}
+.card-properties {
+  font-family: $font-family-lato;
+  font-size: 12px;
 
-.card-properties__value {
-  @include card-properties-font();
-}
-
-.card-properties__quantity {
-  @include card-properties-font();
-}
-
-.card-properties__price {
-  @include card-properties-font();
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
