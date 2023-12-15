@@ -1,0 +1,14 @@
+.control-label {
+  color: #444444;
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
