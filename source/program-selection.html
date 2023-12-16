@@ -18,8 +18,11 @@
         <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60" height="50">
         <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="34" height="38" >
       </picture>
-      <img class="header__logo-text logo-text" src="./images/header-logo-text.svg" width="102" height="18"
-        alt="Cat energy.">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1220px)" srcset="./images/logo-text.svg" width="118" height="21">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text.svg" width="101" height="18">
+        <img src="./images/logo-text.svg" width="101" height="18" alt="Cat energy.">
+      </picture>
     </a>
     <nav class="header__navigation navigation">
       <button class="navigation__toggle" type="button">
@@ -119,8 +122,8 @@
   <footer class="footer">
     <section class="footer__contacts contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <p class="contacts__invite">Приглашаем к сотрудничеству дилеров</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></p>
       <div class="contacts__map map">
         <picture>
           <source type="image/jpeg" media="(min-width: 1220px)" srcset="./images/map-desctop@2x.jpg 2x,
@@ -133,7 +136,11 @@
         </picture>
       </div>
 
-      <img class="footer__logo logo-text" src="./images/footer-logo-text.svg" width="128" height="24" alt="Cat energy.">
+      <a class="footer__logo-link" href="./index.html">
+        <svg class="footer__logo logo-text" width="128" height="24">
+          <use href="./images/sprites.svg#logo-text" aria-label="Cat energy."></use>
+        </svg>
+      </a>
     </section>
 
     <section class="footer__social social">
@@ -143,16 +150,25 @@
         <li class="social__item social__item--first-social">
           <a class="social__link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">В Контакте</span>
+          <svg class="social__logo" width="28" height="22">
+            <use xlink:href="./images/sprites.svg#logo-vk"></use>
+          </svg>
           </a>
         </li>
         <li class="social__item social__item--second-social">
           <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyru">
             <span class="visually-hidden">Youtube</span>
+            <svg class="social__logo" width="28" height="22">
+              <use xlink:href="./images/sprites.svg#logo-youtube"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item social__item--third-social">
           <a class="social__link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
+            <svg class="social__logo" width="28" height="22">
+              <use xlink:href="./images/sprites.svg#logo-telegram"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -160,9 +176,9 @@
       <div class="social__vendor-wrapper vendor">
         <a class="vendor__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="vendor__text">HTML Academy</p>
-        <div class="vendor__logo">
-          <span class="visually-hidden">Логотип HTML Academy</span>
-        </div>
+          <svg class="vendor__logo" width="27" height="34">
+            <use href="./images/sprites.svg#logo-academy"></use>
+          </svg>
         </a>
       </div>
     </section>
