@@ -10,27 +10,10 @@
   background-color: #68b738;
   border: none;
 
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
   &--primary {
     color: #000000;
     line-height: 16px;
     background-color: transparent;
-
-    @media (min-width: 768px) {
-      font-size: 20px;
-      line-height: normal;
-    }
-  }
-
-  &--catalog {
-    @media (min-width: 768px) {
-      font-size: 16px;
-      line-height: 20px;
-    }
   }
 
   &--show-product {
@@ -40,8 +23,25 @@
   &--show-all {
     color: inherit;
     background-color: #f2f2f2;
+  }
+}
 
-    @media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
+
+    &--primary {
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    &--catalog {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &--show-all {
       font-size: 16px;
       line-height: 20px;
     }

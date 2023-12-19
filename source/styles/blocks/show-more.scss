@@ -2,18 +2,20 @@
   color: #111111;
   line-height: 20px;
   text-transform: uppercase;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 24px;
-  }
 }
 
 .show-more__description {
   font-family: $font-family-lato;
   font-size: 12px;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .show-more__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .show-more__description {
     font-size: 16px;
     line-height: 18px;
   }

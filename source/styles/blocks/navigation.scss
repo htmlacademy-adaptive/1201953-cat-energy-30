@@ -1,17 +1,31 @@
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation__link {
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .navigation__link {
     color: #000000;
     font-size: 18px;
     line-height: 24px;
   }
 
-  @media (min-width: 1220px) {
+  .navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .navigation__link {
     color: #ffffff;
     line-height: normal;
   }

@@ -1,5 +1,39 @@
+.gift {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
 .gift__text {
   font-family: $font-family-lato;
   color: #ffffff;
   line-height: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 78px;
+    min-height: 80px;
+    background-image: url("../../images/icons/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift__text {
+    &::before {
+      min-width: 80px;
+      min-height: 82px;
+      background-size: 80px 82px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .gift__text {
+    &::before {
+      min-width: 80px;
+      min-height: 83px;
+      background-size: 80px 83px;
+    }
+  }
 }

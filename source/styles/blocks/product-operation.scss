@@ -3,8 +3,58 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 768px) {
+  &::before {
+    display: block;
+
+    content: "";
+    min-width: 60px;
+    min-height: 60px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+  }
+}
+
+.product-operation__item--helpful {
+  .product-operation__description {
+    &::before {
+      background-image: url("../../images/icons/icon-list.svg");
+    }
+  }
+}
+
+.product-operation__item--fast {
+  .product-operation__description {
+    &::before {
+      background-image: url("../../images/icons/icon-powder.svg");
+    }
+  }
+}
+
+.product-operation__item--small-amount {
+  .product-operation__description {
+    &::before {
+      background-image: url("../../images/icons/icon-cutlery.svg");
+    }
+  }
+}
+
+.product-operation__item--quick-reuslt {
+  .product-operation__description {
+    &::before {
+      background-image: url("../../images/icons/icon-watch.svg");
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-operation__description {
     font-size: 16px;
     line-height: 24px;
+
+    &::before {
+      min-width: 80px;
+      min-height: 80px;
+      background-size: 80px 80px;
+    }
   }
 }
