@@ -11,9 +11,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    width: 709px;
+  }
+
   .promo__slogan {
     color: #000000;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .promo {
+    width: 1220px;
   }
 }
