@@ -1,8 +1,10 @@
 .card-properties {
   font-family: $font-family-lato;
   font-size: 12px;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .card-properties {
     font-size: 16px;
     line-height: 20px;
   }

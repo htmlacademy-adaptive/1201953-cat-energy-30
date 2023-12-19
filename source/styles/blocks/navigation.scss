@@ -4,14 +4,18 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .navigation__link {
     color: #000000;
     font-size: 18px;
     line-height: 24px;
   }
+}
 
-  @media (min-width: 1220px) {
+@media (min-width: $desctop-width) {
+  .navigation__link {
     color: #ffffff;
     line-height: normal;
   }

@@ -12,17 +12,6 @@
     background-size: 60px 60px;
     background-repeat: no-repeat;
   }
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 24px;
-
-    &::before {
-      min-width: 80px;
-      min-height: 80px;
-      background-size: 80px 80px;
-    }
-  }
 }
 
 .product-operation__item--helpful {
@@ -53,6 +42,19 @@
   .product-operation__description {
     &::before {
       background-image: url("../../images/icons/icon-watch.svg");
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-operation__description {
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      min-width: 80px;
+      min-height: 80px;
+      background-size: 80px 80px;
     }
   }
 }
