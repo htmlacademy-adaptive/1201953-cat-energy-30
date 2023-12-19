@@ -1,0 +1,5 @@
+.promo-wrapper {
+  @media (width: $tablet-width - 1px) {
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 237px, #ffffff 237px);
+  }
+}
