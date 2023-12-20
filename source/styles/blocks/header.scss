@@ -41,7 +41,9 @@
 
 @media (min-width: $desctop-width) {
   .header {
-    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%);
+    &--main {
+      background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%);
+    }
   }
 
   .header__wrapper-navigation {

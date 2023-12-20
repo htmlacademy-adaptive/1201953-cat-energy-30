@@ -1,8 +1,3 @@
-.example {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .example__description {
   font-family: $font-family-lato;
   font-size: 14px;
@@ -10,10 +5,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example {
-    width: 708px;
-  }
-
   .example__description {
     font-size: 16px;
     line-height: 24px;
@@ -21,7 +12,5 @@
 }
 
 @media (min-width: $desctop-width) {
-  .example {
-    width: 1220px;
-  }
+
 }

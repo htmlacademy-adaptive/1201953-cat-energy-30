@@ -1,8 +1,3 @@
-.promo {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .promo__slogan {
   color: #ffffff;
   font-size: 14px;
@@ -11,9 +6,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo {
-    width: 709px;
-  }
 
   .promo__slogan {
     color: #000000;
@@ -23,7 +15,5 @@
 }
 
 @media (min-width: $desctop-width) {
-  .promo {
-    width: 1220px;
-  }
+
 }

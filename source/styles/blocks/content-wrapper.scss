@@ -11,6 +11,8 @@
 
 @media (min-width: $desctop-width) {
   .content-wrapper {
-    width: 1220px;
+    width: 1280px;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
 }

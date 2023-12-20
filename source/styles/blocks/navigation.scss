@@ -21,8 +21,14 @@
 }
 
 @media (min-width: $desctop-width) {
+  .navigation--main {
+    .navigation__link {
+      color: #ffffff;
+    }
+  }
+
   .navigation__link {
-    color: #ffffff;
+    font-size: 20px;
     line-height: normal;
   }
 }

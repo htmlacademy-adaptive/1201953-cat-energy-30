@@ -1,3 +1,7 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -16,6 +20,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 768px;
+  }
+
   .contacts__invite {
     font-size: 20px;
     line-height: 26px;
@@ -24,5 +32,20 @@
   .contacts__address {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .footer__contacts {
+    max-width: 1440px;
+    overflow: hidden;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    background-color: #ffffff;
+    width: 565px;
+    top: 95px;
+    left: 110px;
   }
 }
