@@ -59,14 +59,20 @@
         <fieldset class="pet-form__pet-information pet-information">
           <legend class="visually-hidden">Данные питомца</legend>
 
-          <label class="pet-information__label form-label" for="name">Имя:*</label>
-          <input class="pet-information__text text-input" type="text" id="name" name="pet-name" placeholder="Барсик" required>
+          <label class="pet-information__label form-label" for="name">
+            Имя:*
+            <input class="pet-information__text text-input" type="text" id="name" name="pet-name" placeholder="Барсик" required>
+          </label>
 
-          <label class="pet-information__label form-label" for="weight">Вес (кг):*</label>
-          <input class="pet-information__text text-input" type="text" id="weight" name="pet-weight" placeholder="7" required>
+          <label class="pet-information__label form-label" for="weight">
+            Вес (кг):*
+            <input class="pet-information__text text-input" type="text" id="weight" name="pet-weight" placeholder="7" required>
+          </label>
 
-          <label class="pet-information__label form-label" for="age">Возраст (лет):</label>
-          <input class="pet-information__text text-input" type="text" id="age" name="pet-age" placeholder="7">
+          <label class="pet-information__label form-label" for="age">
+            Возраст (лет):
+            <input class="pet-information__text text-input" type="text" id="age" name="pet-age" placeholder="7">
+          </label>
         </fieldset>
 
         <fieldset class="pet-form__product-type product-type">
@@ -85,7 +91,7 @@
         </fieldset>
 
         <fieldset class="pet-form__owner-contacts owner-contacts">
-          <legend class="owner-contacts__title title title--form">Контактные данные (владельца кота)</legend>
+          <legend class="pet-form__title title title--form">Контактные данные (владельца кота)</legend>
 
           <label class="owner-contacts__label form-label" for="mail">E-mail:*</label>
           <input class="owner-contacts__text text-input text-input--mail" type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
@@ -95,12 +101,12 @@
         </fieldset>
 
         <fieldset class="pet-form__comment comment">
-          <legend class="comment__title title title--form">Комментарий</legend>
+          <legend class="pet-form__title title title--form">Комментарий</legend>
           <textarea class="comment__area" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="pet-form__additional form-fieldset">
-          <legend class="form-fieldset__title title title--form">Дополнительно</legend>
+          <legend class="pet-form__title title title--form">Дополнительно</legend>
 
           <input class="form-fieldset__checkbox checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
           <label class="form-fieldset__label control-label" for="sweetener">Сахарозаменитель</label>
