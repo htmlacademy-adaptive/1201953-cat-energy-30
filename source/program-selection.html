@@ -49,14 +49,13 @@
   </header>
 
   <main class="main-container">
-    <h1 class="title title--page-title">Подбор программы</h1>
-
     <section class="questionnaire">
+      <h1 class="questionnaire__title title title--page-title">Подбор программы</h1>
       <h2 class="visually-hidden">Анкета питомца</h2>
-      <p class="questionnaire__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="questionnaire__description ">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
       <form class="questionnaire__form pet-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="pet-form__pet-information pet-information">
+        <fieldset class="pet-form__pet-information pet-information form-fieldset">
           <legend class="visually-hidden">Данные питомца</legend>
 
           <label class="pet-information__label form-label" for="name">
@@ -75,10 +74,9 @@
           </label>
         </fieldset>
 
-        <fieldset class="pet-form__product-type product-type">
+        <fieldset class="pet-form__product-type product-type form-fieldset">
           <legend class="visually-hidden">Тип продукции</legend>
 
-          <fieldset class="product-type__fieldset form-fieldset">
             <input class="form-fieldset__radio-button radio-button" type="radio" id="slim-products" name="type-of-product" value="slim" checked>
             <label class="form-fieldset__label control-label" for="slim-products">Похудение</label>
 
@@ -87,10 +85,9 @@
 
             <input class="form-fieldset__radio-button radio-button" type="radio" id="advice" name="type-of-product" value="advice">
             <label class="form-fieldset__label control-label" for="advice">Не знаю (Нужен ваш совет)</label>
-          </fieldset>
         </fieldset>
 
-        <fieldset class="pet-form__owner-contacts owner-contacts">
+        <fieldset class="pet-form__owner-contacts owner-contacts form-fieldset">
           <legend class="pet-form__title title title--form">Контактные данные (владельца кота)</legend>
 
           <label class="owner-contacts__label form-label" for="mail">E-mail:*</label>
@@ -100,25 +97,25 @@
           <input class="owner-contacts__text text-input text-input--phone" type="tel" id="phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
         </fieldset>
 
-        <fieldset class="pet-form__comment comment">
+        <fieldset class="pet-form__comment comment form-fieldset">
           <legend class="pet-form__title title title--form">Комментарий</legend>
           <textarea class="comment__area" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="pet-form__additional form-fieldset">
+        <fieldset class="pet-form__additional additional form-fieldset">
           <legend class="pet-form__title title title--form">Дополнительно</legend>
 
-          <input class="form-fieldset__checkbox checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
-          <label class="form-fieldset__label control-label" for="sweetener">Сахарозаменитель</label>
+          <input class="additional__checkbox checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+          <label class="additional__label control-label" for="sweetener">Сахарозаменитель</label>
 
-          <input class="form-fieldset__checkbox checkbox" type="checkbox" id="water" name="water">
-          <label class="form-fieldset__label control-label" for="water">Питьевая вода</label>
+          <input class="additional__checkbox checkbox" type="checkbox" id="water" name="water">
+          <label class="additional__label control-label" for="water">Питьевая вода</label>
 
-          <input class="form-fieldset__checkbox checkbox" type="checkbox" id="milk" name="milk">
-          <label class="form-fieldset__label control-label" for="milk">Молоко</label>
+          <input class="additional__checkbox checkbox" type="checkbox" id="milk" name="milk">
+          <label class="additional__label control-label" for="milk">Молоко</label>
 
-          <input class="form-fieldset__checkbox checkbox" type="checkbox" id="vitamins" name="vitamins">
-          <label class="form-fieldset__label control-label" for="vitamins">Витамины</label>
+          <input class="additional__checkbox checkbox" type="checkbox" id="vitamins" name="vitamins">
+          <label class="additional__label control-label" for="vitamins">Витамины</label>
         </fieldset>
 
         <button class="pet-form__button button" type="submit">Отправить заявку</button>
