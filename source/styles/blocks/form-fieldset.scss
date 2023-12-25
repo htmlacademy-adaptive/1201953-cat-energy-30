@@ -2,19 +2,15 @@
   border: none;
   box-sizing: border-box;
   padding: 0;
-  width: 280px;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .form-fieldset {
-    width: 628px;
   }
 }
 
 @media (min-width: $desctop-width) {
   .form-fieldset {
-    width: 100%;
-    padding: 0 30px;
+
   }
 }

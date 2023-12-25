@@ -1,3 +1,27 @@
+.pet-form__require {
+  color: #000000;
+  font-family: $font-family-lato;
+  font-size: 14px;
+  text-align: center;
+}
+
+.pet-form__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .pet-form__button {
+    width: 284px;
+  }
+
+  .pet-form__require {
+    font-size: 16px;
+  }
+}
+
 @media (min-width: $desctop-width) {
   .pet-form {
     display: grid;

@@ -10,12 +10,6 @@
   text-transform: uppercase;
 }
 
-.questionnaire__require {
-  color: #000000;
-  font-family: $font-family-lato;
-  font-size: 14px;
-}
-
 @media (min-width: $tablet-width) {
   .questionnaire__title,
   .questionnaire__description {
@@ -25,10 +19,6 @@
   .questionnaire__description {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .questionnaire__require {
-    font-size: 16px;
   }
 }
 
