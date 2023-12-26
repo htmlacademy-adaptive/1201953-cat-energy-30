@@ -5,6 +5,8 @@
 }
 
 .navigation__link {
+  display: block;
+  text-align: center;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -18,15 +20,17 @@
     font-size: 18px;
     line-height: 24px;
   }
-
-  .navigation__toggle {
-    display: none;
-  }
 }
 
 @media (min-width: $desctop-width) {
+  .navigation--main {
+    .navigation__link {
+      color: #ffffff;
+    }
+  }
+
   .navigation__link {
-    color: #ffffff;
+    font-size: 20px;
     line-height: normal;
   }
 }

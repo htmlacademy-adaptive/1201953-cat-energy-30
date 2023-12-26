@@ -1,0 +1,11 @@
+.pet-information {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.pet-information__label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 13px;
+}

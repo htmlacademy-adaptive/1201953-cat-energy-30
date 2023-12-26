@@ -1,3 +1,28 @@
+.card {
+  box-sizing: border-box;
+  padding: 20px 20px 25px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+}
+
 .card__link {
   text-decoration: none;
+}
+
+.card__button {
+  grid-column: 1/-1;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 37px 40px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .card {
+    padding: 0 38px 40px;
+  }
 }

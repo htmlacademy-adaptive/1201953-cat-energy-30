@@ -1,3 +1,9 @@
+.product-operation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .product-operation__description {
   font-family: $font-family-lato;
   font-size: 14px;
@@ -17,7 +23,7 @@
 .product-operation__item--helpful {
   .product-operation__description {
     &::before {
-      background-image: url("../../images/icons/icon-list.svg");
+      background-image: url("../../images/icons/stack.svg#icon-list");
     }
   }
 }
@@ -25,7 +31,7 @@
 .product-operation__item--fast {
   .product-operation__description {
     &::before {
-      background-image: url("../../images/icons/icon-powder.svg");
+      background-image: url("../../images/icons/stack.svg#icon-powder");
     }
   }
 }
@@ -33,7 +39,7 @@
 .product-operation__item--small-amount {
   .product-operation__description {
     &::before {
-      background-image: url("../../images/icons/icon-cutlery.svg");
+      background-image: url("../../images/icons/stack.svg#icon-cutlery");
     }
   }
 }
@@ -41,7 +47,7 @@
 .product-operation__item--quick-reuslt {
   .product-operation__description {
     &::before {
-      background-image: url("../../images/icons/icon-watch.svg");
+      background-image: url("../../images/icons/stack.svg#icon-watch");
     }
   }
 }

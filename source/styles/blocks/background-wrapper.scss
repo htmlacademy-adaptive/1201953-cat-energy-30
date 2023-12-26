@@ -1,0 +1,9 @@
+.background-wrapper {
+     background-color: #eaeaea;
+
+    &--gradient {
+      @media (min-width: $tablet-width) {
+        background-image: linear-gradient(to bottom, #ffffff 136px, #eaeaea 136px);
+      }
+    }
+}

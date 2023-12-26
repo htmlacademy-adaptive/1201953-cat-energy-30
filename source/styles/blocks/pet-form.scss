@@ -1,0 +1,45 @@
+.pet-form__require {
+  color: #000000;
+  font-family: $font-family-lato;
+  font-size: 14px;
+  text-align: center;
+}
+
+.pet-form__button {
+  display: block;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .pet-form__button {
+    display: inline-block;
+    width: 284px;
+  }
+
+  .pet-form__require {
+    font-size: 16px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .pet-form {
+    display: grid;
+  }
+
+  .pet-form__owner-contacts,
+  .pet-form__comment,
+  .pet-form__additional {
+    grid-column: 1/-1;
+  }
+
+  .pet-form__button {
+    width: 570px;
+  }
+
+  .pet-form__require {
+    justify-self: start;
+  }
+}

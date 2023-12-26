@@ -1,0 +1,10 @@
+.footer__contacts {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__contacts {
+    max-width: 768px;
+  }
+}
