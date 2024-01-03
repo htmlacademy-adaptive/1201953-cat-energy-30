@@ -11,30 +11,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/scripts.js"></script>
 </head>
 
 <body class="page__body">
 
   <header class="header header--main">
     <div class="header__wrapper-navigation">
-      <div class="header__menu-wrapper">
         <a class="header__logo">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-desctop.svg" width="70" height="59">
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60" height="50">
-            <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="34" height="38" >
+            <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="33" height="38" >
           </picture>
           <picture>
             <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-text.svg" width="118" height="21">
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text.svg" width="101" height="18">
-            <img src="./images/logo-text.svg" width="101" height="18" alt="Cat energy">
+            <img class="header__logo-text" src="./images/logo-text.svg" width="101" height="18" alt="Cat energy">
           </picture>
         </a>
-        <button class="header__navigation-toggle" type="button">
+<!--  navigation--opened  -->
+        <nav class="header__navigation navigation navigation--closed navigation--nojs navigation--main">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <nav class="header__navigation navigation navigation--main">
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">

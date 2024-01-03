@@ -1,7 +1,104 @@
+.navigation {
+  &--closed {
+    .navigation__wrapper {
+      display: none;
+    }
+
+    .navigation__toggle {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 2px;
+        left: 0;
+        height: 2px;
+        background-color: #000000;
+        box-shadow: 0 8px 0 0 #000000,
+          0 16px 0 0 #000000;
+      }
+    }
+  }
+
+  &--opened {
+    .navigation__wrapper {
+      background-color: #ffffff;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      right: 0;
+    }
+
+    .navigation__toggle {
+      &::before {
+        content: "";
+        height: 2px;
+        width: 24px;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        content: "";
+        height: 2px;
+        width: 24px;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &--nojs {
+    .navigation__wrapper {
+      position: static;
+      display: block;
+    }
+
+    .navigation__toggle {
+      display: none;
+    }
+  }
+}
+
+.navigation__toggle {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 21px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+
+
 .navigation__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.navigation__item {
+  padding: 22px 10px 24px;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .navigation__link {
@@ -15,6 +112,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .navigation {
+    .navigation__wrapper {
+      display: block;
+    }
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 33px;
+
+    .navigation__item {
+      padding: 0;
+      border: none;
+    }
+  }
+
   .navigation__link {
     color: #000000;
     font-size: 18px;
