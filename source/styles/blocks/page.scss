@@ -1,3 +1,32 @@
 .page__body {
   margin: 0;
 }
+
+.page__header {
+  margin-bottom: 20px;
+}
+
+.page__type-food {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__header {
+    margin-bottom: 0;
+  }
+
+  .page__type-food {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page__header {
+    margin: 0 auto 82px;
+    max-width: 1440px;
+  }
+
+  .page__type-food {
+    margin-bottom: 71px;
+  }
+}
