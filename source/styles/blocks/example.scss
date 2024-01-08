@@ -19,6 +19,10 @@
   margin-bottom: 20px;
 }
 
+.example__wrapper {
+  min-height: 256px;
+}
+
 @media (min-width: $tablet-width) {
   .example {
     padding: 0;

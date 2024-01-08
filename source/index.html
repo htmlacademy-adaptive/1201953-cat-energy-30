@@ -168,35 +168,39 @@
           </div>
         </div>
 
-        <div class="example__wrapper">
-          <picture>
-            <source type="image/png" media="(min-width: 1280px)" srcset="
-                  ./images/cat-before@2x.png 2x,
-                  ./images/cat-before@1x.png
-                " width="560" height="512" />
-            <source type="image/png" media="(min-width: 768px)" srcset="
-                  ./images/cat-before@2x.png 2x,
-                  ./images/cat-before@1x.png 1x
-                " width="560" height="512" />
-            <img class="example__image example__image--before" src="./images/cat-before-mobile@1x.png"
+        <div class="example__wrapper slider">
+          <div class="slider__view slider__view--before" style="width: 50%">
+            <picture>
+              <source type="image/png" media="(min-width: 1280px)" srcset="
+              ./images/cat-before@2x.png 2x,
+              ./images/cat-before@1x.png
+              " width="560" height="512" />
+              <source type="image/png" media="(min-width: 768px)" srcset="
+              ./images/cat-before@2x.png 2x,
+              ./images/cat-before@1x.png 1x
+              " width="560" height="512" />
+              <img class="example__image example__image--before" src="./images/cat-before-mobile@1x.png"
               srcset="./images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до похудения." />
-          </picture>
+            </picture>
+          </div>
 
-          <picture>
-            <source type="image/png" media="(min-width: 1280px)" srcset="
+          <div class="slider__view slider__view--after" style="clip-path: inset(0 0 0 50%)">
+                <picture>
+                  <source type="image/png" media="(min-width: 1280px)" srcset="
                   ./images/cat-after@2x.png 2x,
                   ./images/cat-after@1x.png 1x
-                " width="560" height="512" />
-            <source type="image/png" media="(min-width: 768px)" srcset="
+                  " width="560" height="512" />
+                  <source type="image/png" media="(min-width: 768px)" srcset="
                   ./images/cat-after@2x.png 2x,
                   ./images/cat-after@1x.png 1x
-                " width="560" height="512" />
-            <img class="example__image example__image--before" src="./images/cat-after-mobile@1x.png" srcset="
+                  " width="560" height="512" />
+                  <img class="example__image example__image--after" src="./images/cat-after-mobile@1x.png" srcset="
                   ./images/cat-after-mobile@2x.png 2x,
-                  ./images/cat-after-mobile@1x.png 1x
-                " width="280" height="256" alt="Кот Борис после похудения." />
-          </picture>
-          <button class="example__slider" type="button">
+                  ./images/cat-after-mobile@1x.png 1x"
+                   width="280" height="256" alt="Кот Борис после похудения." />
+                </picture>
+          </div>
+          <button class="slider__button" type="button" style="left: 50%">
             <span class="visually-hidden">Измнение картинки до похудения и после похудения</span>
           </button>
         </div>
