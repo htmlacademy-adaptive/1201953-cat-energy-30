@@ -1,0 +1,46 @@
+.slider {
+  position: relative;
+}
+
+.slider__view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  max-width: 280px;
+  overflow: hidden;
+
+  img {
+    width: 280px;
+    max-width: 280px;
+  }
+
+  &--before {
+    z-index: 10;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #666666;
+  padding: 0;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+}
+
