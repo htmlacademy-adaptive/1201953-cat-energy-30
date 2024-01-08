@@ -10,6 +10,12 @@
   margin-bottom: 20px;
 }
 
+.page__product-operation {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+}
+
 @media (min-width: $tablet-width) {
   .page__header {
     margin-bottom: 0;
@@ -17,6 +23,19 @@
 
   .page__type-food {
     margin-bottom: 45px;
+  }
+
+  .page__product-operation {
+    width: 100%;
+    margin-bottom: 45px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
   }
 }
 
@@ -28,5 +47,12 @@
 
   .page__type-food {
     margin-bottom: 71px;
+  }
+
+  .page__product-operation {
+    margin-bottom: 69px;
+    &::after {
+      display: none;
+    }
   }
 }

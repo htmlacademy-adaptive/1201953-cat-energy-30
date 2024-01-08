@@ -1,16 +1,65 @@
+.example {
+  padding: 25px 0 40px;
+}
+
+.example__text-wrapper {
+  margin-bottom: 20px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
 .example__description {
   font-family: $font-family-lato;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    padding: 0;
+    padding-bottom: 101px;
+  }
+
+  .example__text-wrapper {
+    margin-bottom: 104px;
+  }
+
+  .example__title {
+    margin-bottom: 60px;
+  }
+
   .example__description {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 55px;
   }
 }
 
 @media (min-width: $desctop-width) {
+  .example {
+    padding-bottom: 75px;
+  }
 
+  .example__text-wrapper {
+    margin-bottom: 0;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    margin-bottom: 69px;
+  }
+
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 432px 560px;
+    column-gap: 228px;
+  }
 }
