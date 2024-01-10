@@ -1,0 +1,21 @@
+.products__list {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    width: 708px;
+  }
+
+  .products__show-more {
+    height: 429px;
+    align-self: end;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .products__list {
+    width: 1220px;
+  }
+}

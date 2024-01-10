@@ -1,3 +1,14 @@
+.additional-products__title {
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.additional-products__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: $desctop-width) {
   .additional-products {
     display: grid;

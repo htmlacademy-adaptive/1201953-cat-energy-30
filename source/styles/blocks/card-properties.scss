@@ -1,11 +1,40 @@
 .card-properties {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0;
   font-family: $font-family-lato;
   font-size: 12px;
+}
+
+.card-properties__value,
+.card-properties__price {
+  margin: 0;
+  text-align: end;
 }
 
 @media (min-width: $tablet-width) {
   .card-properties {
     font-size: 16px;
     line-height: 20px;
+    row-gap: 5px;
+    align-items: start;
+  }
+
+  .card-properties__name {
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 4px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .card-properties__value {
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 4px;
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 }

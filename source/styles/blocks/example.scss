@@ -19,8 +19,8 @@
   margin-bottom: 20px;
 }
 
-.example__wrapper {
-  min-height: 256px;
+.example__wrapper-slider {
+  display: grid;
 }
 
 @media (min-width: $tablet-width) {

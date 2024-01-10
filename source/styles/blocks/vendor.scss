@@ -1,10 +1,21 @@
 .vendor__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   color: inherit;
   font-family: $font-family-lato;
   line-height: 20px;
   text-decoration: none;
 }
 
+.vendor__text {
+  flex-basis: 130px;
+  margin: 0;
+}
+
 .vendor__logo {
+  display: block;
+  flex-basis: 27px;
   fill: #666666;
 }
