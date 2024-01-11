@@ -6,10 +6,25 @@
 .additional-products__list {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .additional-products__title {
+    margin-bottom: 80px;
+  }
+
+  .additional-products__list {
+    margin-bottom: 70px;
+  }
+}
+
 @media (min-width: $desctop-width) {
+  .additional-products__list {
+    margin: 0;
+  }
+
   .additional-products {
     display: grid;
     grid-template-columns: 895px 245px;

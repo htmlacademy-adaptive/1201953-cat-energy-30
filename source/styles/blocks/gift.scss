@@ -1,4 +1,5 @@
 .gift {
+  box-sizing: border-box;
   padding: 59px 61px 43px 58px;
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-mobile@1x.jpg");
   background-size: cover;
@@ -30,8 +31,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .gift {
+    padding: 57px 125px 60.5px 77px;
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-tablet@2x.png");
+    }
+  }
+
   .gift__text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 52.17%;
+    text-align: start;
+    align-items: center;
+
     &::before {
+      margin: 0;
       min-width: 80px;
       min-height: 82px;
       background-size: 80px 82px;
@@ -40,7 +57,22 @@
 }
 
 @media (min-width: $desctop-width) {
+  .gift {
+    padding: 56px 42px 43px;
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-desctop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-desctop@2x.jpg");
+    }
+  }
+
   .gift__text {
+    display: flex;
+    flex-direction: column;
+    gap: 46px 0;
+    align-items: center;
+    text-align: center;
+
     &::before {
       min-width: 80px;
       min-height: 83px;

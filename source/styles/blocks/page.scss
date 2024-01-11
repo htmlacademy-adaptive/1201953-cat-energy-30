@@ -16,6 +16,14 @@
   margin-bottom: 49px;
 }
 
+.page__products {
+  margin-bottom: 25px;
+}
+
+.page__additional-products {
+  margin-bottom: 35px;
+}
+
 @media (min-width: $tablet-width) {
   .page__header {
     margin-bottom: 0;
@@ -37,6 +45,14 @@
       background-color: #e6e6e6;
     }
   }
+
+  .page__products {
+    margin-bottom: 70px;
+  }
+
+  .page__additional-products {
+    margin-bottom: 75px;
+  }
 }
 
 @media (min-width: $desctop-width) {
@@ -50,8 +66,17 @@
 
   .page__product-operation {
     margin-bottom: 69px;
+
     &::after {
       display: none;
     }
+  }
+
+  .page__products {
+    margin-bottom: 76px;
+  }
+
+  .page__additional-products {
+    margin-bottom: 87px;
   }
 }
