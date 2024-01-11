@@ -78,12 +78,12 @@
 
       @media (min-resolution: 2dppx) {
         background-image: linear-gradient(
-          to right,
-          #ffffff 50%,
-          rgba(104, 183, 56, 0.85) 50%,
-          rgba(104, 183, 56, 0.85) 100%
-        ),
-        url("../../images/promo-background-desktop@2x.jpg");
+            to right,
+            #ffffff 50%,
+            rgba(104, 183, 56, 0.85) 50%,
+            rgba(104, 183, 56, 0.85) 100%
+          ),
+          url("../../images/promo-background-desktop@2x.jpg");
       }
     }
   }
