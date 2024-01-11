@@ -1,5 +1,7 @@
 .slider {
   position: relative;
+  display: grid;
+  justify-content: center;
 }
 
 .slider__view {
@@ -56,18 +58,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider__view {
-    width: 708px;
-    max-width: 708px;
-
-    img {
-      width: 708px;
-      max-width: 708px;
-    }
-  }
-}
-
-@media (min-width: $desctop-width) {
   .slider__view {
     width: 560px;
     max-width: 560px;

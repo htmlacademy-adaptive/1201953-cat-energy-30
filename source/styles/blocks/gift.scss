@@ -33,10 +33,10 @@
 @media (min-width: $tablet-width) {
   .gift {
     padding: 57px 125px 60.5px 77px;
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-tablet@1x.png");
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-tablet@2x.png");
+      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-tablet@2x.jpg");
     }
   }
 
