@@ -3,13 +3,17 @@
   margin: 0 auto;
 }
 
+.products__show-more {
+  border-bottom: 1px solid #ebebeb;
+}
+
 @media (min-width: $tablet-width) {
   .products__list {
     width: 708px;
   }
 
   .products__show-more {
-    height: 429px;
+    min-height: 429px;
     align-self: end;
   }
 }
