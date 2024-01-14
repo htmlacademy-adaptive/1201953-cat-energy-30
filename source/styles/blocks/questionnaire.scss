@@ -1,28 +1,27 @@
-.questionnaire__form {
-  width: 280px;
-  margin: 0 auto;
-}
-
+.questionnaire__wrapper,
 .questionnaire__title,
 .questionnaire__description {
   width: 280px;
   margin: 0 auto;
 }
 
+.questionnaire {
+  padding-top: 27px;
+}
+
+.questionnaire__title {
+  margin-bottom: 37px;
+}
+
 .questionnaire__description {
+  margin-bottom: 39px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
-  .questionnaire__form {
-    width: 628px;
-    margin: 0 auto;
-  }
-
-  .questionnaire__title,
-  .questionnaire__description {
+  .questionnaire__wrapper {
     width: 628px;
   }
 
@@ -33,14 +32,13 @@
 }
 
 @media (min-width: $desctop-width) {
+  .questionnaire__wrapper {
+    width: 1220px;
+  }
+
   .questionnaire__form {
     grid-template-columns: 570px 570px;
     justify-content: center;
     column-gap: 80px;
-  }
-
-  .questionnaire__title,
-  .questionnaire__description {
-    width: 1220px;
   }
 }

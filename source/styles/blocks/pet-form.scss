@@ -1,3 +1,78 @@
+.pet-form__title {
+  padding: 0;
+}
+
+.pet-form__pet-information,
+.pet-form__product-type {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.pet-form__pet-information {
+  padding-bottom: 24px;
+}
+
+.pet-form__product-type {
+  padding: 22px 0 19px 0;
+  margin-bottom: 26px;
+}
+
+.pet-form__label,
+.pet-form__control-label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pet-form__label {
+  column-gap: 13px;
+  margin-bottom: 14px;
+}
+
+.pet-form__control-label {
+  column-gap: 15px;
+  margin-bottom: 13px;
+}
+
+.pet-form__owner-contacts {
+  margin-bottom: 24px;
+
+  .pet-form__title {
+    margin-bottom: 35px;
+  }
+}
+
+.pet-form__comment {
+  margin-bottom: 23px;
+
+  .pet-form__title {
+    margin-bottom: 38px;
+  }
+}
+
+.pet-form__comment-block {
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+.pet-form__additional {
+  margin-bottom: 34px;
+
+  .pet-form__title {
+    margin-bottom: 34px;
+  }
+}
+
+.pet-form__button {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .pet-form__require {
   color: #000000;
   font-family: $font-family-lato;
@@ -5,14 +80,12 @@
   text-align: center;
 }
 
-.pet-form__button {
-  display: block;
-  text-align: center;
-  width: 280px;
-  margin: 0 auto;
-}
-
 @media (min-width: $tablet-width) {
+  .pet-form__comment {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .pet-form__button {
     display: inline-block;
     width: 284px;
