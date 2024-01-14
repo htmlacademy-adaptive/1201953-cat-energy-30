@@ -1,19 +1,18 @@
 .radio {
-  position: relative;
-  padding-left: 30px;
+  // position: relative;
+  // padding-left: 45px;
   min-height: 30px;
 }
 
 .radio__custom {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    border: 1px solid #cdcdcd;
-    border-radius: 50%;
+  content: "";
+  position: relative;
+  grid-column: 1/2;
+  align-self: start;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
 }
 
 .radio__input {

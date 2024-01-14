@@ -19,7 +19,7 @@
 .pet-form__label,
 .pet-form__control-label {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: max-content 1fr;
   align-items: center;
 
 
@@ -31,6 +31,11 @@
 .pet-form__label {
   column-gap: 13px;
   margin-bottom: 14px;
+}
+
+.pet-form__signature {
+  max-width: 100px;
+  word-wrap: break-word;
 }
 
 .pet-form__control-label {
@@ -71,6 +76,7 @@
 .pet-form__button {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 21px;
 }
 
 .pet-form__require {
@@ -78,6 +84,8 @@
   font-family: $font-family-lato;
   font-size: 14px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {

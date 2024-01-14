@@ -58,18 +58,18 @@
             <div class="questionnaire__wrapper">
               <legend class="visually-hidden">Данные питомца</legend>
               <label class="pet-form__label label">
-                Имя:*
-                <input class="pet-form__text text-input" type="text" name="pet-name" placeholder="Барсик" required>
+                <span class="pet-form__signature">Имя:*</span>
+                <input class="pet-form__text-input text-input" type="text" name="pet-name" placeholder="Барсик" required>
               </label>
 
               <label class="pet-form__label label">
-                Вес (кг):*
-                <input class="pet-form__text text-input" type="text" name="pet-weight" placeholder="7" required>
+                <span class="pet-form__signature">Вес (кг):*</span>
+                <input class="pet-form__text-input text-input" type="text" name="pet-weight" placeholder="7" required>
               </label>
 
               <label class="pet-form__label label">
-                Возраст (лет):
-                <input class="pet-form__text text-input" type="text" name="pet-age" placeholder="7">
+                <span class="pet-form__signature">Возраст (лет):</span>
+                <input class="pet-form__text-input text-input" type="text" name="pet-age" placeholder="7">
               </label>
             </div>
             </fieldset>
@@ -103,13 +103,13 @@
             <legend class="pet-form__title title title--form">Контактные данные (владельца кота)</legend>
 
             <label class="pet-form__label label">
-              E-mail:*
-              <input class="pet-form__text text-input text-input--mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+              <span class="pet-form__signature">E-mail:*</span>
+              <input class="pet-form__text-input text-input text-input--mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com" required>
             </label>
 
             <label class="pet-form__label label">
-              Телефон:*
-              <input class="pet-form__text text-input text-input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+              <span class="pet-form__signature">Телефон:*</span>
+              <input class="pet-form__text-input text-input text-input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
 
@@ -123,26 +123,30 @@
 
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="sweetener" checked>
+              <span class="checkbox__custom"></span>
               Сахарозаменитель
             </label>
 
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="water">
+              <span class="checkbox__custom"></span>
               Питьевая вода
             </label>
 
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="milk">
+              <span class="checkbox__custom"></span>
               Молоко
             </label>
 
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="vitamins">
+              <span class="checkbox__custom"></span>
               Витамины
             </label>
           </fieldset>
 
-          <button class="pet-form__button button" type="submit">Отправить заявку</button>
+          <button class="pet-form__button button button--secondary" type="submit">Отправить заявку</button>
           <p class="pet-form__require">
             <small>* — Обязательные поля</small>
           </p>
