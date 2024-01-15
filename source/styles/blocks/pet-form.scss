@@ -2,18 +2,21 @@
   padding: 0;
 }
 
-.pet-form__pet-information,
-.pet-form__product-type {
-  border-bottom: 1px solid #d9d9d9;
-}
-
-.pet-form__pet-information {
-  padding-bottom: 24px;
-}
-
 .pet-form__product-type {
   padding: 22px 0 19px 0;
   margin-bottom: 26px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.pet-form__pet-information,
+.pet-form__product-type-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.pet-form__pet-information {
+  margin-bottom: 24px;
 }
 
 .pet-form__label,
@@ -21,7 +24,6 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
-
 
   &:last-child {
     margin-bottom: 0;
@@ -31,6 +33,10 @@
 .pet-form__label {
   column-gap: 13px;
   margin-bottom: 14px;
+}
+
+.pet-form__text-input {
+  align-self: start;
 }
 
 .pet-form__signature {
@@ -80,43 +86,165 @@
 }
 
 .pet-form__require {
-  color: #000000;
-  font-family: $font-family-lato;
-  font-size: 14px;
   text-align: center;
-  margin: 0;
-  margin-bottom: 32px;
+
+  small {
+    color: #000000;
+    font-family: $font-family-lato;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .pet-form__pet-information,
+  .pet-form__product-type-wrapper {
+    width: 628px;
+    box-sizing: border-box;
+  }
+
+  .pet-form__pet-information {
+    margin-bottom: 72px;
+  }
+
+  .pet-form__label {
+    margin-bottom: 20px;
+  }
+
+  .pet-form__signature {
+    max-width: 130px;
+  }
+
+  .pet-form__product-type {
+    padding: 0;
+    margin-bottom: 65px;
+    border: none;
+  }
+
+  .pet-form__product-type-wrapper {
+    padding: 22px 26px 26px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .pet-form__control-label {
+    column-gap: 20px;
+    margin-bottom: 13px;
+  }
+
+  .pet-form__owner-contacts {
+    margin-bottom: 65px;
+
+    .pet-form__title {
+      margin-bottom: 76px;
+    }
+  }
+
   .pet-form__comment {
+    margin-bottom: 65px;
+
+    .pet-form__title {
+      margin-bottom: 87px;
+    }
+  }
+
+  .pet-form__additional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 50px;
+    align-items: start;
+    margin-bottom: 52px;
+
+    .pet-form__title {
+      margin-bottom: 57px;
+    }
+
+    .pet-form__control-label {
+      margin-bottom: 0;
+    }
+  }
+
+  .pet-form__comment-block {
+    min-height: 175px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .pet-form__button,
+  .pet-form__require {
+    margin: 0;
   }
 
   .pet-form__button {
     display: inline-block;
     width: 284px;
+    margin-right: 60px;
   }
 
   .pet-form__require {
-    font-size: 16px;
     display: inline-block;
+
+    small {
+      font-size: 16px;
+    }
   }
 }
 
 @media (min-width: $desctop-width) {
+  .pet-form__pet-information,
+  .pet-form__product-type-wrapper {
+    width: 570px;
+  }
+
   .pet-form {
     display: grid;
   }
 
-  .pet-form__owner-contacts,
-  .pet-form__comment,
+  .pet-form__pet-information,
+  .pet-form__product-type {
+    margin: 0;
+  }
+
+  .pet-form__product-type-wrapper {
+    padding: 24px 27px;
+  }
+
+  .pet-form__owner-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    column-gap: 80px;
+    row-gap: 20px;
+
+    .pet-form__label {
+      margin: 0;
+    }
+  }
+
+  .pet-form__comment {
+    margin-bottom: 70px;
+
+    .pet-form__title {
+      margin-bottom: 76px;
+    }
+  }
+
   .pet-form__additional {
-    grid-column: 1/-1;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 15px;
+
+    .pet-form__title {
+      margin-bottom: 57px;
+    }
+
+    .pet-form__control-label {
+      flex-basis: 290px;
+    }
   }
 
   .pet-form__button {
+    margin-right: 80px;
     width: 570px;
   }
 

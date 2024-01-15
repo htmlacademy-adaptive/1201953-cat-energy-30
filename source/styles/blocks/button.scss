@@ -10,6 +10,7 @@
   text-decoration: none;
   background-color: #68b738;
   border: none;
+  text-align: center;
 
   &--primary {
     color: #000000;
@@ -17,9 +18,9 @@
     background-color: transparent;
   }
 
+  &--send-form,
   &--secondary {
     padding: 10px 0;
-    text-align: center;
   }
 
   &--show-product {
@@ -45,6 +46,12 @@
     &--primary {
       font-size: 20px;
       line-height: normal;
+    }
+
+    &--send-form {
+      padding: 14px 0;
+      font-size: 20px;
+      line-height: 26px;
     }
 
     &--secondary {

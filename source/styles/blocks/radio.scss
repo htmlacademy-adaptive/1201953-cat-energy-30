@@ -9,8 +9,8 @@
   position: relative;
   grid-column: 1/2;
   align-self: start;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 }
@@ -29,5 +29,27 @@
     height: 13px;
     border-radius: 50%;
     background-color: #68b738;
+  }
+}
+
+.radio__signature {
+  max-width: 230px;
+}
+
+@media (min-width: $tablet-width) {
+  .radio__custom {
+    width: 38px;
+    height: 38px;
+  }
+
+  .radio__input {
+    &:checked + .radio__custom::before {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .radio__signature {
+    max-width: 570px;
   }
 }

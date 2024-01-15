@@ -55,7 +55,6 @@
 
         <form class="questionnaire__form pet-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="pet-form__pet-information form-fieldset">
-            <div class="questionnaire__wrapper">
               <legend class="visually-hidden">Данные питомца</legend>
               <label class="pet-form__label label">
                 <span class="pet-form__signature">Имя:*</span>
@@ -71,29 +70,28 @@
                 <span class="pet-form__signature">Возраст (лет):</span>
                 <input class="pet-form__text-input text-input" type="text" name="pet-age" placeholder="7">
               </label>
-            </div>
             </fieldset>
 
           <fieldset class="pet-form__product-type form-fieldset">
-            <div class="questionnaire__wrapper">
+            <div class="pet-form__product-type-wrapper">
               <legend class="visually-hidden">Тип продукции</legend>
 
               <label class="pet-form__control-label label radio">
                 <input class="radio__input" type="radio" name="type-of-product" value="slim" checked>
                 <span class="radio__custom"></span>
-                Похудение
+                <span class="radio__signature">Похудение</span>
               </label>
 
               <label class="pet-form__control-label label radio">
                 <input class="radio__input" type="radio" name="type-of-product" value="pro">
                 <span class="radio__custom"></span>
-                Набор массы
+                <span class="radio__signature">Набор массы</span>
               </label>
 
               <label class="pet-form__control-label label radio">
                 <input class="radio__input" type="radio" name="type-of-product" value="advice">
                 <span class="radio__custom"></span>
-                Не знаю (Нужен ваш совет)
+                <span class="radio__signature">Не знаю (Нужен ваш совет)</span>
               </label>
             </div>
             </fieldset>
@@ -115,7 +113,7 @@
 
           <fieldset class="pet-form__comment comment form-fieldset">
             <legend class="pet-form__title title title--form">Комментарий</legend>
-            <textarea class="pet-form__comment-block text-input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="pet-form__comment-block text-input text-input--area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="pet-form__additional form-fieldset">
@@ -124,29 +122,29 @@
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="sweetener" checked>
               <span class="checkbox__custom"></span>
-              Сахарозаменитель
+              <span class="checkbox__signature">Сахарозаменитель</span>
             </label>
 
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="water">
               <span class="checkbox__custom"></span>
-              Питьевая вода
+              <span class="checkbox__signature">Питьевая вода</span>
             </label>
 
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="milk">
               <span class="checkbox__custom"></span>
-              Молоко
+              <span class="checkbox__signature">Молоко</span>
             </label>
 
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="vitamins">
               <span class="checkbox__custom"></span>
-              Витамины
+              <span class="checkbox__signature">Витамины</span>
             </label>
           </fieldset>
 
-          <button class="pet-form__button button button--secondary" type="submit">Отправить заявку</button>
+          <button class="pet-form__button button button--send-form" type="submit">Отправить заявку</button>
           <p class="pet-form__require">
             <small>* — Обязательные поля</small>
           </p>
@@ -156,7 +154,7 @@
     </main>
 
     <footer class="footer">
-      <section class="footer__contacts contacts">
+      <section class="footer__contacts contacts contacts--background">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__wrapper">
           <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
