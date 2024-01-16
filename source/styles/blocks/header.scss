@@ -13,19 +13,22 @@
 //   }
 // }
 
+.header__wrapper-logo {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .header__logo {
+  width: 190px;
   display: grid;
   grid-template-columns: 33px 101px;
   align-items: center;
-  padding: 13px 50px 14px 20px;
+  padding: 13px 0 14px;
   text-decoration: none;
-  column-gap: 22.4%;
+  column-gap: 56px;
 }
 
-.header__logo-image {
-  display: block;
-}
-
+.header__logo-image,
 .header__logo-text {
   display: block;
 }
@@ -38,7 +41,13 @@
 // }
 
 @media (min-width: $tablet-width) {
+  .header__wrapper-logo {
+    flex-basis: 174px;
+    margin: 0;
+  }
+
   .header__logo {
+    width: 100%;
     grid-template-columns: 60px 101px;
     column-gap: 13px;
     padding: 0;
@@ -86,6 +95,10 @@
           url("../../images/promo-background-desktop@2x.jpg");
       }
     }
+  }
+
+  .header__wrapper-logo {
+    flex-basis: 202px;
   }
 
   .header__logo {

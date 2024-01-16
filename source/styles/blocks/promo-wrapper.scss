@@ -7,7 +7,7 @@
     url("../../images/promo-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
+  background-size: 100%, auto;
   object-fit: scale-down;
 
   @media (min-resolution: 2dppx) {

@@ -2,8 +2,9 @@
   box-sizing: border-box;
   padding: 59px 61px 43px 58px;
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-mobile@1x.jpg");
-  background-size: cover;
+  background-size: cover, contain;
   background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../images/gift-background-mobile@2x.jpg");

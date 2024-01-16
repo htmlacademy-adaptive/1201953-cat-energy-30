@@ -17,22 +17,32 @@
 
   <header class="header">
     <div class="header__wrapper-navigation">
+      <div class="header__wrapper-logo">
         <a class="header__logo" href="./index.html">
           <picture>
-            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-desctop.svg" width="70" height="59">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60" height="50">
-            <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="33" height="38" >
+            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-desctop.svg" width="70"
+              height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60"
+              height="50">
+            <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="33"
+              height="38">
           </picture>
           <picture>
-            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-text.svg" width="118" height="21">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text.svg" width="101" height="18">
+            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-text.svg" width="118"
+              height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text.svg" width="101"
+              height="18">
             <img src="./images/logo-text.svg" width="101" height="18" alt="Cat energy">
           </picture>
         </a>
+      </div>
+
       <nav class="header__navigation navigation--closed navigation--nojs navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="navigation__wrapper-button">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
 
         <div class="navigation__wrapper">
           <ul class="navigation__list">
@@ -266,7 +276,7 @@
 
     </section>
 
-    <section class="page__additional-products additional-products content-wrapper">
+    <section class="page__additional-products additional-products">
       <h2 class="additional-products__title title title--additional">
         <span class="additional-products__title-text">Дополнительные товары</span>
       </h2>

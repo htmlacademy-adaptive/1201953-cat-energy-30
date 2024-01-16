@@ -1,6 +1,6 @@
 .products__list {
-  width: 320px;
-  margin: 0 auto;
+  // width: 320px;
+  // margin: 0 auto;
 }
 
 .products__show-more {
@@ -9,6 +9,7 @@
 
 @media (min-width: $tablet-width) {
   .products__list {
+    margin: 0 auto;
     width: 708px;
   }
 
