@@ -21,7 +21,7 @@
 }
 
 .page__additional-products {
-  padding: 25px 6.25% 35px;
+  padding: 0 6.25%;
   margin-bottom: 35px;
 }
 
@@ -52,6 +52,7 @@
   }
 
   .page__additional-products {
+    padding: 0;
     width: 708px;
     margin: 0 auto;
     margin-bottom: 75px;

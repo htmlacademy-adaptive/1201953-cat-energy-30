@@ -17,11 +17,11 @@
 
     .statistic__title {
       position: absolute;
-      top: 46px;
+      top: 100%;
+      transform: translateY(-38%);
       left: 0;
       right: 0;
-      width: 77px;
-      height: 24px;
+      max-width: 64%;
       margin: 0 auto;
       font-family: $font-family-lato;
       text-align: center;
