@@ -21,15 +21,22 @@
       transform: translateY(-38%);
       left: 0;
       right: 0;
-      max-width: 64%;
       margin: 0 auto;
+      max-width: 75%;
       font-family: $font-family-lato;
       text-align: center;
       text-transform: lowercase;
       font-size: 12px;
       line-height: 12px;
       box-sizing: border-box;
+      // padding: 0 14px;
+    }
+
+    .statistic__signature {
+      display: inline-block;
       background-color: #eaeaea;
+      max-width: 64%;
+      padding: 0 14px;
     }
 
     .statistic__index {
@@ -69,11 +76,32 @@
       padding: 15px 0 20px;
 
       .statistic__title {
-        background-color: #ffffff;
-        top: 63px;
-        width: 135px;
+        transform: translateY(-50%);
         font-size: 14px;
         line-height: 14px;
+        max-width: 94%;
+        padding: 0;
+      }
+
+      .statistic__signature {
+        background-color: #ffffff;
+        padding: 0;
+        max-width: 100%;
+
+        &::after,
+        &::before {
+          display: inline-block;
+          // width: 1px;
+          content: "";
+        }
+
+        &::after {
+          margin-right: 8px;
+        }
+
+        &::before {
+          margin-left: 8px;
+        }
       }
 
       .statistic__index {
@@ -104,7 +132,7 @@
 
   .statistic__wrapper {
     &:not(:last-child) {
-      .statistic__title {
+      .statistic__signature {
         background-color: #f2f2f2;
       }
     }
