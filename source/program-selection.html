@@ -109,29 +109,41 @@
 
         <div class="questionnaire__wrapper">
           <fieldset class="pet-form__owner-contacts form-fieldset">
-            <legend class="pet-form__title title title--form">Контактные данные (владельца кота)</legend>
+            <legend class="pet-form__title title title--form">
+              <span class="pet-form__title-text">Контактные данные</br> (владельца кота)</span>
+            </legend>
 
             <label class="pet-form__label label">
               <span class="pet-form__signature">E-mail:*</span>
               <input class="pet-form__text-input text-input text-input--mail" type="email" name="owner-mail"
                 placeholder="kuklachev@gmail.com" required>
+                <svg class="pet-form__email-image" width="20" height="20">
+                  <use href="../images/icons/stack.svg#icon-email">
+                </svg>
             </label>
 
             <label class="pet-form__label label">
               <span class="pet-form__signature">Телефон:*</span>
               <input class="pet-form__text-input text-input text-input--phone" type="tel" name="owner-phone"
                 placeholder="8 (960) 900-60-90" required>
+                <svg class="pet-form__phone-image" width="20" height="20">
+                  <use href="../images/icons/stack.svg#icon-phone">
+                </svg>
             </label>
           </fieldset>
 
           <fieldset class="pet-form__comment comment form-fieldset">
-            <legend class="pet-form__title title title--form">Комментарий</legend>
+            <legend class="pet-form__title title title--form">
+              <span class="pet-form__title-text">Комментарий</span>
+            </legend>
             <textarea class="pet-form__comment-block text-input text-input--area" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="pet-form__additional form-fieldset">
-            <legend class="pet-form__title title title--form">Дополнительно</legend>
+            <legend class="pet-form__title title title--form">
+              <span class="pet-form__title-text">Дополнительно</span>
+            </legend>
 
             <label class="pet-form__control-label label checkbox">
               <input class="checkbox__input" type="checkbox" name="sweetener" checked>

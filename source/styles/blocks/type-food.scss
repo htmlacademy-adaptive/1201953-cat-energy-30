@@ -12,7 +12,7 @@
   .type-food {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    gap: 80px;
   }
 
   .type-food__card:first-of-type {
