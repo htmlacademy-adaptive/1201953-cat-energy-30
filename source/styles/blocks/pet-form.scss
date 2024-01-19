@@ -59,15 +59,12 @@
   align-self: start;
 }
 
-.pet-form__email-image {
-  --icon-color: #000000;
-}
-
 .pet-form__email-image,
 .pet-form__phone-image {
   position: absolute;
   top: 12px;
   right: 11px;
+  --icon-color: #000000;
 }
 
 .pet-form__signature {
