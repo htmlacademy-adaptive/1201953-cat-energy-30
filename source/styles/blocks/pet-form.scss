@@ -202,6 +202,12 @@
     }
   }
 
+  .pet-form__email-image,
+  .pet-form__phone-image {
+    top: 15px;
+    right: 13px;
+  }
+
   .pet-form__comment {
     margin-bottom: 65px;
 
@@ -287,6 +293,11 @@
     .pet-form__label {
       margin: 0;
     }
+  }
+
+  .pet-form__email-image,
+  .pet-form__phone-image {
+    right: 15px;
   }
 
   .pet-form__comment {

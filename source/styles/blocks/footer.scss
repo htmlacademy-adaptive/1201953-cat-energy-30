@@ -7,6 +7,23 @@
   margin: 0 auto;
 }
 
+.footer__logo-link {
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .footer__logo {
+      fill: #3e3e3e;
+    }
+  }
+
+  &:active {
+    .footer__logo {
+      fill: #6b6b6b;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .footer__logo-link {
     flex-basis: 128px;

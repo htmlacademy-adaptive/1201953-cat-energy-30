@@ -28,6 +28,7 @@
   bottom: 0;
   width: 4px;
   background-color: #666666;
+  border-radius: 2px;
   padding: 0;
   border: none;
 
@@ -54,6 +55,32 @@
     mask-image: url("../../images/slider-arrows.svg");
     transform: translate(-50%, -50%);
     z-index: 30;
+  }
+
+  &:hover {
+    background-color: #68b738;
+
+    &::before {
+      border-color: #68b738;
+    }
+
+    &::after {
+      background-color: #68b738;
+    }
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.6;
+    z-index: 50;
+
+    &::before {
+      border-color: #5eaa2f;
+    }
+
+    &::after {
+      background-color: #5eaa2f;
+    }
   }
 }
 

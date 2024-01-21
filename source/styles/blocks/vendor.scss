@@ -7,6 +7,17 @@
   font-family: $font-family-lato;
   line-height: 20px;
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    .vendor__logo {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .vendor__text {

@@ -14,6 +14,21 @@
 
 .social-list__link {
   display: block;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .social-list__logo {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    .social-list__logo {
+      opacity: 0.3;
+    }
+  }
 }
 
 .social-list__logo {

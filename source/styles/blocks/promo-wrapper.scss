@@ -1,9 +1,7 @@
 .promo-wrapper {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(104, 183, 56, 0.85) 302px,
-      #ffffff 302px
-    ),
+      #ffffff 302px),
     url("../../images/promo-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
@@ -11,11 +9,9 @@
   object-fit: scale-down;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(104, 183, 56, 0.85) 302px,
-        #ffffff 302px
-      ),
+        #ffffff 302px),
       url("../../images/promo-background-mobile@2x.jpg");
   }
 }

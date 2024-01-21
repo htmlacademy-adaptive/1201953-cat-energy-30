@@ -26,6 +26,14 @@
   padding: 13px 0 14px;
   text-decoration: none;
   column-gap: 56px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__logo-image,

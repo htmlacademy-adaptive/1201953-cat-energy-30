@@ -76,15 +76,6 @@
   column-gap: 15px;
   width: 139px;
   padding: 4px 0;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 32px;
-    height: 10px;
-    background-image: url("../../images/arrow.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-width: $tablet-width) {
