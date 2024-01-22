@@ -57,10 +57,26 @@
 
 .pet-form__text-input {
   align-self: start;
+
+  &:focus-visible ~ .pet-form__email-icon {
+    --icon-color: #68b738;
+  }
+
+  &:focus-visible ~ .pet-form__phone-icon {
+    --icon-color: #68b738;
+  }
+
+  &:invalid ~ .pet-form__email-icon {
+    --icon-color: #ff8282;
+  }
+
+  &:invalid ~ .pet-form__phone-icon {
+    --icon-color: #ff8282;
+  }
 }
 
-.pet-form__email-image,
-.pet-form__phone-image {
+.pet-form__email-icon,
+.pet-form__phone-icon {
   position: absolute;
   top: 12px;
   right: 11px;
@@ -202,8 +218,8 @@
     }
   }
 
-  .pet-form__email-image,
-  .pet-form__phone-image {
+  .pet-form__email-icon,
+  .pet-form__phone-icon {
     top: 15px;
     right: 13px;
   }
@@ -295,8 +311,8 @@
     }
   }
 
-  .pet-form__email-image,
-  .pet-form__phone-image {
+  .pet-form__email-icon,
+  .pet-form__phone-icon {
     right: 15px;
   }
 

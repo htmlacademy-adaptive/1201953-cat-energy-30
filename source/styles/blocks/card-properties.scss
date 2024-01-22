@@ -1,14 +1,16 @@
 .card-properties {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   margin: 0;
   font-family: $font-family-lato;
   font-size: 12px;
 }
 
+.card-properties__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card-properties__value {
   margin: 0;
-  text-align: end;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,21 +21,22 @@
     align-items: start;
   }
 
-  .card-properties__name {
-    &::after {
-      content: "";
-      display: block;
-      margin-top: 4px;
-      border-bottom: 1px solid #cdcdcd;
-    }
-  }
+  .card-properties__wrapper {
+    position: relative;
+    margin-bottom: 10px;
 
-  .card-properties__value {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &::after {
       content: "";
-      display: block;
-      margin-top: 4px;
-      border-bottom: 1px solid #cdcdcd;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #cdcdcd;
     }
   }
 }

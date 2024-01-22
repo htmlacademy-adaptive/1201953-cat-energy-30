@@ -1,6 +1,6 @@
 .card {
   box-sizing: border-box;
-  padding: 20px 6.25% 25px;
+  padding: 20px 6.25% 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 17px;
@@ -9,6 +9,11 @@
 .card__link-image {
   justify-self: center;
   align-self: center;
+  min-height: 107px;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__link {
@@ -19,6 +24,7 @@
   margin: 0;
   margin-bottom: 14px;
   padding-right: 64px;
+  text-transform: uppercase;
 }
 
 .card__button {
@@ -34,9 +40,6 @@
   }
 
   .card__link-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-width: 200px;
     min-height: 210px;
     margin-bottom: 22px;

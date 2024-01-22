@@ -1,17 +1,12 @@
 .header {
   position: relative;
-}
 
-// .header__menu-wrapper {
-//   @media (max-width: $tablet-width - 1px) {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 280px;
-//     margin: 0 auto;
-//     padding: 13px 0 14px;
-//   }
-// }
+  &:not(.header--main) {
+    .header__wrapper-navigation {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+}
 
 .header__wrapper-logo {
   width: 280px;
@@ -40,13 +35,6 @@
 .header__logo-text {
   display: block;
 }
-
-// .header__navigation {
-//   position: absolute;
-//   top: 65px;
-//   left: 0;
-//   right: 0;
-// }
 
 @media (min-width: $tablet-width) {
   .header__wrapper-logo {

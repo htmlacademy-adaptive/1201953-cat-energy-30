@@ -9,12 +9,21 @@
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
 
+  &--mail,
+  &--phone {
+    padding-right: 40px;
+  }
+
   &:hover {
     border-color: #cdcdcd;
   }
 
   &:focus-visible {
     outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline-color: #ff8282;
   }
 }
 
@@ -23,6 +32,11 @@
     padding: 10px 19px;
     font-size: 20px;
     line-height: normal;
+
+    &--mail,
+    &--phone {
+      padding-right: 50px;
+    }
   }
 }
 

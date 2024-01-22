@@ -1,6 +1,4 @@
 .radio {
-  // position: relative;
-  // padding-left: 45px;
   min-height: 30px;
 }
 
@@ -29,6 +27,18 @@
     height: 13px;
     border-radius: 50%;
     background-color: #68b738;
+  }
+
+  &:hover ~ .radio__custom {
+    border-color: #bababa;
+  }
+
+  &:disabled ~ .radio__custom {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .radio__signature {
+    opacity: 0.3;
   }
 }
 

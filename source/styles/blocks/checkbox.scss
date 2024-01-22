@@ -22,6 +22,18 @@
     background-position: center;
     background-size: 26px;
   }
+
+  &:hover ~ .checkbox__custom {
+    border-color: #bababa;
+  }
+
+  &:disabled ~ .checkbox__custom {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .checkbox__signature {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__signature {

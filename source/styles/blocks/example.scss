@@ -31,7 +31,7 @@
   }
 
   .example__text-wrapper {
-    margin-bottom: 104px;
+    margin-bottom: 102px;
   }
 
   .example__title {
@@ -66,5 +66,9 @@
     display: grid;
     grid-template-columns: 432px 560px;
     column-gap: 228px;
+  }
+
+  .example__wrapper-slider {
+    align-self: start;
   }
 }

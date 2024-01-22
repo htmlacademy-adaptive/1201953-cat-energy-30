@@ -73,7 +73,7 @@
 .type-food-card__button {
   display: flex;
   align-items: center;
-  column-gap: 15px;
+  column-gap: 17px;
   width: 139px;
   padding: 4px 0;
 }
@@ -175,5 +175,9 @@
         background-size: 134px 56px;
       }
     }
+  }
+
+  .type-food-card__description {
+    margin-bottom: 23px;
   }
 }

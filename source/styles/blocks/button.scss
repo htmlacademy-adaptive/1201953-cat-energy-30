@@ -32,7 +32,7 @@
       height: 10px;
       background-image: url("../../images/arrow.svg");
       background-repeat: no-repeat;
-      background-size: 24px 10px;
+      background-size: 32px 10px;
     }
 
     &:hover {
@@ -40,7 +40,7 @@
     }
 
     &:hover::after {
-      background-size: 32px 10px;
+      background-size: 40px 10px;
     }
 
     &:active {
