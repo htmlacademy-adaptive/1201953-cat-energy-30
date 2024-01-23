@@ -35,7 +35,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    padding: 0 37px 40px;
+    padding: 10px 37px 40px;
     gap: 0;
   }
 
@@ -52,6 +52,7 @@
   .card__title {
     text-align: center;
     padding: 0 60px;
+    margin-bottom: 20px;
   }
 
   .card__wrapper {
@@ -61,15 +62,16 @@
 
 @media (min-width: $desctop-width) {
   .card {
-    padding: 0 36.5px 40px;
+    padding: 10px 38px 40px;
   }
 
   .card__link-image {
-    min-width: 172px;
+    min-width: 169px;
+    margin-bottom: 12px;
   }
 
   .card__title {
-    padding: 0 20px;
+    padding: 0 18px;
     margin-bottom: 23.4px;
   }
 }

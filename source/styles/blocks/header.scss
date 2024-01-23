@@ -37,6 +37,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    &:not(.header--main) {
+      .header__wrapper-navigation {
+        border: none;
+      }
+    }
+  }
+
   .header__wrapper-logo {
     flex-basis: 174px;
     margin: 0;

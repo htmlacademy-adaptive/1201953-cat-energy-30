@@ -23,11 +23,16 @@
 .vendor__text {
   flex-basis: 130px;
   margin: 0;
-  padding-left: 5px;
 }
 
 .vendor__logo {
   display: block;
   flex-basis: 27px;
   fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .vendor__text {
+    padding-left: 5px;
+  }
 }

@@ -60,6 +60,10 @@
   }
 
   &--nojs {
+    .navigation__item:last-child {
+      border-bottom: none;
+    }
+
     .navigation__wrapper {
       position: static;
       display: block;
