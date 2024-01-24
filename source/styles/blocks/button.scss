@@ -1,4 +1,5 @@
 .button {
+  display: block;
   color: #ffffff;
   font-family: $font-family-oswald;
   font-size: 16px;
@@ -9,20 +10,74 @@
   text-decoration: none;
   background-color: #68b738;
   border: none;
+  text-align: center;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &--primary {
     color: #000000;
     line-height: 16px;
     background-color: transparent;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 10px;
+      background-image: url("../../images/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: 32px 10px;
+    }
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    &:hover::after {
+      background-size: 40px 10px;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+
+  &--send-form,
+  &--secondary {
+    padding: 10px 0;
   }
 
   &--show-product {
+    padding: 0;
     background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cline x1='15' x2='15' y2='30' stroke='%23D3D3D3' stroke-width='2'/%3E%3Cline x1='30' y1='15' y2='15' stroke='%23D3D3D3' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
   }
 
   &--show-all {
+    padding: 10px 0;
     color: inherit;
     background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 1);
+    }
   }
 }
 
@@ -36,9 +91,19 @@
       line-height: normal;
     }
 
-    &--catalog {
+    &--send-form {
+      padding: 14px 0;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &--secondary {
       font-size: 16px;
       line-height: 20px;
+    }
+
+    &--show-product {
+      background-size: 60px;
     }
 
     &--show-all {

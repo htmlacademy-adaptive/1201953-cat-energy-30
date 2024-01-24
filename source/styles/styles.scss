@@ -7,6 +7,7 @@
 @import "./global/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/content-wrapper.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";
@@ -17,12 +18,13 @@
 @import "./blocks/title.scss";
 @import "./blocks/button.scss";
 @import "./blocks/type-food.scss";
-@import "./blocks/content-wrapper.scss";
 @import "./blocks/type-food-card.scss";
 @import "./blocks/product-operation.scss";
 @import "./blocks/background-wrapper.scss";
 @import "./blocks/example.scss";
 @import "./blocks/statistic.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/catalog.scss";
 @import "./blocks/products.scss";
 @import "./blocks/products-list.scss";
 @import "./blocks/card.scss";
@@ -35,14 +37,9 @@
 @import "./blocks/questionnaire.scss";
 @import "./blocks/form-fieldset.scss";
 @import "./blocks/pet-form.scss";
-@import "./blocks/pet-information.scss";
-@import "./blocks/form-label.scss";
+@import "./blocks/label.scss";
 @import "./blocks/text-input.scss";
-@import "./blocks/product-type.scss";
-@import "./blocks/radio-button.scss";
-@import "./blocks/control-label.scss";
-@import "./blocks/owner-contacts.scss";
-@import "./blocks/comment.scss";
+@import "./blocks/radio.scss";
 @import "./blocks/checkbox.scss";
 //footer
 @import "./blocks/footer.scss";
@@ -50,4 +47,5 @@
 @import "./blocks/map.scss";
 @import "./blocks/logo-text.scss";
 @import "./blocks/social.scss";
+@import "./blocks/social-list.scss";
 @import "./blocks/vendor.scss";

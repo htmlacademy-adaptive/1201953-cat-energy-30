@@ -1,10 +1,38 @@
 .footer__contacts {
+  overflow: hidden;
+}
+
+.footer__logo {
+  display: block;
   margin: 0 auto;
-  max-width: 320px;
+}
+
+.footer__logo-link {
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .footer__logo {
+      fill: #3e3e3e;
+    }
+  }
+
+  &:active {
+    .footer__logo {
+      fill: #6b6b6b;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .footer__contacts {
-    max-width: 768px;
+  .footer__logo-link {
+    flex-basis: 128px;
+    margin-right: 160px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .footer__logo-link {
+    margin-right: 416px;
   }
 }

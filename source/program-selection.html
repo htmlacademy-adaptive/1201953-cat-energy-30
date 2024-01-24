@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Подбор программы</title>
@@ -7,30 +8,39 @@
   <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/180.png">
   <link rel="manifest" href="./manifest.webmainfest">
-  <meta name="viewport" content="width=divice-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper-navigation">
-      <div class="header__menu-wrapper">
+      <div class="header__wrapper-logo">
         <a class="header__logo" href="./index.html">
           <picture>
-            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-desctop.svg" width="70" height="59">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60" height="50">
-            <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="34" height="38" >
+            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-desctop.svg" width="70"
+              height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="60"
+              height="50">
+            <img class="header__logo-image" src="./images/logo-mobile.svg" alt="Логотип сайта Cat Energy." width="33"
+              height="38">
           </picture>
           <picture>
-            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-text.svg" width="118" height="21">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text.svg" width="101" height="18">
+            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="./images/logo-text.svg" width="118"
+              height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text.svg" width="101"
+              height="18">
             <img src="./images/logo-text.svg" width="101" height="18" alt="Cat energy">
           </picture>
         </a>
-        <button class="header__navigation-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
-      <nav class="header__navigation navigation">
+      <nav class="header__navigation navigation--closed navigation--nojs navigation">
+        <div class="navigation__wrapper-button">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -40,7 +50,7 @@
               <a class="navigation__link" href="./catalog.html">Каталог продукции</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link">Подбор программы</a>
+              <a class="navigation__link navigation__link--current">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -55,98 +65,151 @@
       <p class="questionnaire__description ">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
       <form class="questionnaire__form pet-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="pet-form__pet-information pet-information form-fieldset">
+        <fieldset class="pet-form__pet-information form-fieldset">
           <legend class="visually-hidden">Данные питомца</legend>
-
-          <label class="pet-information__label form-label" for="name">
-            Имя:*
-            <input class="pet-information__text text-input" type="text" id="name" name="pet-name" placeholder="Барсик" required>
+          <label class="pet-form__label label">
+            <span class="pet-form__signature">Имя:*</span>
+            <input class="pet-form__text-input text-input" type="text" name="pet-name" placeholder="Барсик" required>
           </label>
 
-          <label class="pet-information__label form-label" for="weight">
-            Вес (кг):*
-            <input class="pet-information__text text-input" type="text" id="weight" name="pet-weight" placeholder="7" required>
+          <label class="pet-form__label label">
+            <span class="pet-form__signature">Вес (кг):*</span>
+            <input class="pet-form__text-input text-input" type="text" name="pet-weight" placeholder="7" required>
           </label>
 
-          <label class="pet-information__label form-label" for="age">
-            Возраст (лет):
-            <input class="pet-information__text text-input" type="text" id="age" name="pet-age" placeholder="7">
+          <label class="pet-form__label label">
+            <span class="pet-form__signature">Возраст (лет):</span>
+            <input class="pet-form__text-input text-input" type="text" name="pet-age" placeholder="7">
           </label>
         </fieldset>
 
-        <fieldset class="pet-form__product-type product-type form-fieldset">
-          <legend class="visually-hidden">Тип продукции</legend>
+        <fieldset class="pet-form__product-type form-fieldset">
+          <div class="pet-form__product-type-wrapper">
+            <legend class="visually-hidden">Тип продукции</legend>
 
-            <input class="form-fieldset__radio-button radio-button" type="radio" id="slim-products" name="type-of-product" value="slim" checked>
-            <label class="form-fieldset__label control-label" for="slim-products">Похудение</label>
+            <label class="pet-form__control-label label radio">
+              <input class="radio__input" type="radio" name="type-of-product" value="slim" checked>
+              <span class="radio__custom"></span>
+              <span class="radio__signature">Похудение</span>
+            </label>
 
-            <input class="form-fieldset__radio-button radio-button" type="radio" id="pro-products" name="type-of-product" value="pro">
-            <label class="form-fieldset__label control-label" for="pro-products">Набор массы</label>
+            <label class="pet-form__control-label label radio">
+              <input class="radio__input" type="radio" name="type-of-product" value="pro">
+              <span class="radio__custom"></span>
+              <span class="radio__signature">Набор массы</span>
+            </label>
 
-            <input class="form-fieldset__radio-button radio-button" type="radio" id="advice" name="type-of-product" value="advice">
-            <label class="form-fieldset__label control-label" for="advice">Не знаю (Нужен ваш совет)</label>
+            <label class="pet-form__control-label label radio">
+              <input class="radio__input" type="radio" name="type-of-product" value="advice">
+              <span class="radio__custom"></span>
+              <span class="radio__signature">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </div>
         </fieldset>
 
-        <fieldset class="pet-form__owner-contacts owner-contacts form-fieldset">
-          <legend class="pet-form__title title title--form">Контактные данные (владельца кота)</legend>
+        <div class="questionnaire__wrapper">
+          <fieldset class="pet-form__owner-contacts form-fieldset">
+            <legend class="pet-form__title title title--form">
+              <span class="pet-form__title-text">Контактные данные</br> (владельца кота)</span>
+            </legend>
 
-          <label class="owner-contacts__label form-label" for="mail">E-mail:*</label>
-          <input class="owner-contacts__text text-input text-input--mail" type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+            <label class="pet-form__label label">
+              <span class="pet-form__signature">E-mail:*</span>
+              <input class="pet-form__text-input text-input text-input--mail" type="email" name="owner-mail"
+                placeholder="kuklachev@gmail.com" required>
+                <svg class="pet-form__email-icon" width="20" height="20">
+                  <use href="../images/icons/stack.svg#icon-email">
+                </svg>
+            </label>
 
-          <label class="owner-contacts__label form-label" for="phone">Телефон:*</label>
-          <input class="owner-contacts__text text-input text-input--phone" type="tel" id="phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
-        </fieldset>
+            <label class="pet-form__label label">
+              <span class="pet-form__signature">Телефон:*</span>
+              <input class="pet-form__text-input text-input text-input--phone" type="tel" name="owner-phone"
+                placeholder="8 (960) 900-60-90" required>
+                <svg class="pet-form__phone-icon" width="20" height="20">
+                  <use href="../images/icons/stack.svg#icon-phone">
+                </svg>
+            </label>
+          </fieldset>
 
-        <fieldset class="pet-form__comment comment form-fieldset">
-          <legend class="pet-form__title title title--form">Комментарий</legend>
-          <textarea class="comment__area" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
+          <fieldset class="pet-form__comment comment form-fieldset">
+            <legend class="pet-form__title title title--form">
+              <span class="pet-form__title-text">Комментарий</span>
+            </legend>
+            <textarea class="pet-form__comment-block text-input text-input--area" name="comment"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
 
-        <fieldset class="pet-form__additional additional form-fieldset">
-          <legend class="pet-form__title title title--form">Дополнительно</legend>
+          <fieldset class="pet-form__additional form-fieldset">
+            <legend class="pet-form__title title title--form">
+              <span class="pet-form__title-text">Дополнительно</span>
+            </legend>
 
-          <input class="additional__checkbox checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
-          <label class="additional__label control-label" for="sweetener">Сахарозаменитель</label>
+            <label class="pet-form__control-label label checkbox">
+              <input class="checkbox__input" type="checkbox" name="sweetener" checked>
+              <span class="checkbox__custom"></span>
+              <span class="checkbox__signature">Сахарозаменитель</span>
+            </label>
 
-          <input class="additional__checkbox checkbox" type="checkbox" id="water" name="water">
-          <label class="additional__label control-label" for="water">Питьевая вода</label>
+            <label class="pet-form__control-label label checkbox">
+              <input class="checkbox__input" type="checkbox" name="water">
+              <span class="checkbox__custom"></span>
+              <span class="checkbox__signature">Питьевая вода</span>
+            </label>
 
-          <input class="additional__checkbox checkbox" type="checkbox" id="milk" name="milk">
-          <label class="additional__label control-label" for="milk">Молоко</label>
+            <label class="pet-form__control-label label checkbox">
+              <input class="checkbox__input" type="checkbox" name="milk">
+              <span class="checkbox__custom"></span>
+              <span class="checkbox__signature">Молоко</span>
+            </label>
 
-          <input class="additional__checkbox checkbox" type="checkbox" id="vitamins" name="vitamins">
-          <label class="additional__label control-label" for="vitamins">Витамины</label>
-        </fieldset>
+            <label class="pet-form__control-label label checkbox">
+              <input class="checkbox__input" type="checkbox" name="vitamins">
+              <span class="checkbox__custom"></span>
+              <span class="checkbox__signature">Витамины</span>
+            </label>
+          </fieldset>
 
-        <button class="pet-form__button button" type="submit">Отправить заявку</button>
-        <p class="pet-form__require">
-          <small>* — Обязательные поля</small>
-        </p>
+          <button class="pet-form__button button button--send-form" type="submit">Отправить заявку</button>
+          <p class="pet-form__require">
+            <small>* &#8211; Обязательные поля</small>
+          </p>
       </form>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <section class="footer__contacts contacts">
+    <section class="footer__contacts contacts contacts--background">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="contacts__wrapper">
-        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></p>
+        <p class="contacts__invite">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <p class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8
+          <span class="contacts__address-city">Санкт-Петербург</span>
+        </p>
       </div>
       <div class="contacts__map map">
         <picture>
-          <source type="image/jpeg" media="(min-width: 1280px)" srcset="./images/map-desctop@2x.jpg 2x,
-          ./images/map-desctop@1x.jpg 1x" width="1440" height="400">
+          <source type="image/jpeg" media="(min-width: 1280px)" srcset="
+                ./images/map-desctop@2x.jpg 2x,
+                ./images/map-desctop@1x.jpg 1x
+              " width="1440" height="400">
 
-          <source type="image/jpeg" media="(min-width: 768px)" srcset="./images/map-tablet@2x.jpg 2x,
-          ./images/map-tablet@1x.jpg 1x" width="768" height="400">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="
+                ./images/map-tablet@2x.jpg 2x,
+                ./images/map-tablet@1x.jpg 1x
+              " width="768" height="400">
 
-          <img class="map__image" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Расположение компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="map__image" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" width="320"
+            height="362" alt="Расположение компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
+
+        <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.32047247737302!3d59.93871916209359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sus!4v1706113025563!5m2!1sru!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
-    <section class="footer__social social background-wrapper">
+    <section class="footer__social social">
       <div class="social__wrapper content-wrapper">
         <h2 class="visually-hidden">Наши социальные сети</h2>
 
@@ -157,34 +220,34 @@
           </svg>
         </a>
 
-        <ul class="social__list">
-          <li class="social__item social__item--first-social">
-            <a class="social__link" href="https://vk.com/htmlacademy">
+        <ul class="social__list social-list">
+          <li class="social-list__item social-list__item--first-social">
+            <a class="social-list__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">В Контакте</span>
-              <svg class="social__logo" width="28" height="22">
+              <svg class="social-list__logo" width="28" height="22">
                 <use xlink:href="./images/icons/stack.svg#logo-vkontakte"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item social__item--second-social">
-            <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyru">
+          <li class="social-list__item social-list__item--second-social">
+            <a class="social-list__link" href="https://www.youtube.com/c/HTMLAcademyru">
               <span class="visually-hidden">Youtube</span>
-              <svg class="social__logo" width="28" height="22">
+              <svg class="social-list__logo" width="28" height="22">
                 <use xlink:href="./images/icons/stack.svg#logo-youtube"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item social__item--third-social">
-            <a class="social__link" href="https://t.me/htmlacademy">
+          <li class="social-list__item social-list__item--third-social">
+            <a class="social-list__link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
-              <svg class="social__logo" width="28" height="22">
+              <svg class="social-list__logo" width="28" height="22">
                 <use xlink:href="./images/icons/stack.svg#logo-telegram"></use>
               </svg>
             </a>
           </li>
         </ul>
 
-        <div class="social__vendor-wrapper vendor">
+        <div class="social__vendor vendor">
           <a class="vendor__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="vendor__text">HTML Academy</p>
             <svg class="vendor__logo" width="27" height="34">
@@ -196,4 +259,5 @@
     </section>
   </footer>
 </body>
+
 </html>

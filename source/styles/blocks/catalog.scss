@@ -1,0 +1,24 @@
+.catalog {
+  overflow: hidden;
+  padding-top: 27px;
+}
+
+.catalog__title {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 65px;
+  }
+
+  .catalog__title {
+    margin-bottom: 84px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .catalog {
+    padding-top: 74px;
+  }
+}

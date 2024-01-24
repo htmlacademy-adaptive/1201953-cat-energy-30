@@ -2,15 +2,5 @@
   border: none;
   box-sizing: border-box;
   padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .form-fieldset {
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .form-fieldset {
-
-  }
+  margin: 0;
 }

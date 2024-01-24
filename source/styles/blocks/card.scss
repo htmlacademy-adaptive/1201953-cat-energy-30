@@ -1,12 +1,30 @@
 .card {
   box-sizing: border-box;
-  padding: 20px 20px 25px;
+  padding: 20px 6.25% 24px;
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 17px;
+}
+
+.card__link-image {
+  justify-self: center;
+  align-self: center;
+  min-height: 107px;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__link {
   text-decoration: none;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 14px;
+  padding-right: 64px;
+  text-transform: uppercase;
 }
 
 .card__button {
@@ -17,12 +35,43 @@
   .card {
     display: flex;
     flex-direction: column;
-    padding: 0 37px 40px;
+    padding: 10px 37px 40px;
+    gap: 0;
+  }
+
+  .card__link-image {
+    min-width: 200px;
+    min-height: 210px;
+    margin-bottom: 22px;
+  }
+
+  .card__link {
+    margin-bottom: 21px;
+  }
+
+  .card__title {
+    text-align: center;
+    padding: 0 60px;
+    margin-bottom: 20px;
+  }
+
+  .card__wrapper {
+    margin-bottom: auto;
   }
 }
 
 @media (min-width: $desctop-width) {
   .card {
-    padding: 0 38px 40px;
+    padding: 10px 38px 40px;
+  }
+
+  .card__link-image {
+    min-width: 169px;
+    margin-bottom: 12px;
+  }
+
+  .card__title {
+    padding: 0 18px;
+    margin-bottom: 23.4px;
   }
 }

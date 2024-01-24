@@ -1,0 +1,43 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list__item {
+  flex-basis: 28px;
+}
+
+.social-list__link {
+  display: block;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .social-list__logo {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    .social-list__logo {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social-list__logo {
+  fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    gap: 24px;
+    justify-content: start;
+  }
+}

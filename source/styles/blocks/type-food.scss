@@ -1,0 +1,21 @@
+.type-food__card:first-of-type {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .type-food__card:first-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .type-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .type-food__card:first-of-type {
+    margin-bottom: 0;
+  }
+}
