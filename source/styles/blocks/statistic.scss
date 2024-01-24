@@ -86,13 +86,14 @@
       }
 
       .statistic__signature {
+        display: inline-flex;
         background-color: #ffffff;
         padding: 0;
         max-width: 100%;
 
         &::after,
         &::before {
-          display: inline-block;
+          display: block;
           // width: 1px;
           content: "";
         }
