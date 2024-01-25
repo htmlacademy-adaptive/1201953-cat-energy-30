@@ -25,6 +25,10 @@
     position: relative;
     margin-bottom: 10px;
 
+    &:nth-child(even) {
+      padding: 2px 0;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -37,6 +41,16 @@
       right: 0;
       height: 1px;
       background-color: #cdcdcd;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .card-properties__wrapper {
+    &:last-child {
+      &::after {
+        top: calc(100% + 10px);
+      }
     }
   }
 }
