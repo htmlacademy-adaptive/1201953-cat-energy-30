@@ -8,8 +8,11 @@
   <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/180.png">
   <link rel="manifest" href="./manifest.webmainfest">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -84,9 +87,9 @@
         </fieldset>
 
         <fieldset class="pet-form__product-type form-fieldset">
-          <div class="pet-form__product-type-wrapper">
-            <legend class="visually-hidden">Тип продукции</legend>
+          <legend class="visually-hidden">Тип продукции</legend>
 
+          <div class="pet-form__product-type-wrapper">
             <label class="pet-form__control-label label radio">
               <input class="radio__input" type="radio" name="type-of-product" value="slim" checked>
               <span class="radio__custom"></span>
@@ -110,7 +113,7 @@
         <div class="questionnaire__wrapper">
           <fieldset class="pet-form__owner-contacts form-fieldset">
             <legend class="pet-form__title title title--form">
-              <span class="pet-form__title-text">Контактные данные</br> (владельца кота)</span>
+              <span class="pet-form__title-text">Контактные данные<br> (владельца кота)</span>
             </legend>
 
             <label class="pet-form__label label">
@@ -118,7 +121,7 @@
               <input class="pet-form__text-input text-input text-input--mail" type="email" name="owner-mail"
                 placeholder="kuklachev@gmail.com" required>
                 <svg class="pet-form__email-icon" width="20" height="20">
-                  <use href="../images/icons/stack.svg#icon-email">
+                  <use href="../images/icons/stack.svg#icon-email"></use>
                 </svg>
             </label>
 
@@ -127,7 +130,7 @@
               <input class="pet-form__text-input text-input text-input--phone" type="tel" name="owner-phone"
                 placeholder="8 (960) 900-60-90" required>
                 <svg class="pet-form__phone-icon" width="20" height="20">
-                  <use href="../images/icons/stack.svg#icon-phone">
+                  <use href="../images/icons/stack.svg#icon-phone"></use>
                 </svg>
             </label>
           </fieldset>
@@ -174,8 +177,8 @@
           <p class="pet-form__require">
             <small>* &#8211; Обязательные поля</small>
           </p>
+        </div>
       </form>
-      </div>
     </section>
   </main>
 
@@ -215,7 +218,7 @@
 
         <a class="footer__logo-link" href="./index.html">
           <span class="visually-hidden">Cat energy</span>
-          <svg class="footer__logo logo-text" width="128" height="24">
+          <svg class="footer__logo logo-text" width="128" height="24" role="img">
             <use href="./images/icons/stack.svg#logo-text"></use>
           </svg>
         </a>
