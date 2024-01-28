@@ -76,5 +76,3 @@ document.addEventListener('touchmove', (e) => {
   x -= slider.getBoundingClientRect().left;
   beforeAfterSlider(x);
 });
-
-

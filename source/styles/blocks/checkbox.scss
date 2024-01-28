@@ -26,6 +26,10 @@
     border-color: #bababa;
   }
 
+  &:focus ~ .checkbox__custom {
+    border-color: #000000;
+  }
+
   &:disabled ~ .checkbox__custom {
     opacity: 0.3;
   }
